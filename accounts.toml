@@ -1,0 +1,6 @@
+[[users]]
+offlineUuid = "9c9774ec-892d-34fb-acd5-896c0b17cb5e" #example uuid (MC cracked)
+uuid = "4cc0f07d-f1ae-4b4f-a019-cad35bb668rs" #example uuid (MC premium)
+name = "Steve" # MC username
+
+# Repeat this with all the users that will host
