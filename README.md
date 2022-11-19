@@ -37,7 +37,8 @@ MC-Sync-Upload has the function of send the world (server) to another person or 
 ### Prerequisites 📌
 
  - [Go 1.18](https://go.dev/) 
- - Ngrok
+ - Ngrok (I mention ngrok but you can use other tools that supports tcp tunnels)
+ - Firebase Project (Firebase Storage)
 
 ### Set up 💻
 
@@ -55,10 +56,11 @@ An executable for your OS will be created
 
 ### Play 🪀
 
-Share the executables and also ngrok with your friends
+Share the executables (mc-sync-upload / download) and also ngrok with your friends
 
 When you open the world in LAN go to ngrok and type:
 
-    ngrok tcp <port>
+    ngrok tcp <port> --region <region to host>
 
 And send the ngrok domain name to your friends as an IP for the server
+(Example: 74329sadoijjiosad.ngrok.io )
