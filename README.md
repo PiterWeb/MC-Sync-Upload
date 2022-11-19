@@ -4,6 +4,8 @@
 
 This is part of the pack MC-Sync. MC-Sync are two programms that aims to make easier to **play minecraft** (java edition) with your friends **without a real server**.
 
+[See MC-Sync-Download](https://github.com/PiterWeb/MC-Sync-Download)
+
 MC-Sync-Upload has the function of send the world (server) to another person or upload it into the firebase cloud (**free** or paid tier) to make backups.
 
 ## Purpouse 
