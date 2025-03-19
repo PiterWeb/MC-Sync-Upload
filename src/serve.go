@@ -1,12 +1,13 @@
-package main
+package src
 
 import (
+	"time"
+
 	"github.com/pterm/pterm"
 	"github.com/valyala/fasthttp"
-	"time"
 )
 
-func serveWorld(name string) error {
+func ServeWorld(name string) error {
 
 	pterm.Println()
 

@@ -1,23 +1,34 @@
-package main
+package src
 
 import (
+	"context"
+
 	firebase "firebase.google.com/go/v4"
+	"github.com/BurntSushi/toml"
 	"google.golang.org/api/option"
 )
 
-func uploadWorld(name string, data []byte) error {
+type StorageConfig struct {
+	StorageBucket string `toml:"ST_BUCKET"`
+}
 
-	storageBucket, err := getEnv("ST_BUCKET")
+func UploadWorld(rawConfig []byte, name string, data []byte) error {
+
+	ctx := context.Background()
+
+	var storageConfig StorageConfig
+
+	_, err := toml.Decode(string(rawConfig), &storageConfig)
 
 	if err != nil {
 		return err
 	}
 
 	var config = &firebase.Config{
-		StorageBucket: storageBucket,
+		StorageBucket: storageConfig.StorageBucket,
 	}
 
-	var opt = option.WithCredentialsJSON(credentialsFile)
+	var opt = option.WithCredentialsFile("./serviceAccount.json")
 	firebaseApp, err := firebase.NewApp(ctx, config, opt)
 
 	if err != nil {

@@ -1,14 +1,15 @@
-package main
+package src
 
 import (
-	"github.com/BurntSushi/toml"
 	"os"
 	"path"
+
+	"github.com/BurntSushi/toml"
 )
 
-func setPlayersConfig(folderName string) error {
+func SetPlayersConfig(folderName string, rawConfig []byte) error {
 
-	_, err := toml.Decode(string(accountData), &users)
+	_, err := toml.Decode(string(rawConfig), &users)
 
 	if err != nil {
 		return err

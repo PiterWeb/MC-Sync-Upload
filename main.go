@@ -3,29 +3,22 @@ package main
 import (
 	"context"
 	_ "embed"
-	"github.com/pterm/pterm"
 	"os"
 	"path/filepath"
 	"strings"
 	"time"
+
+	"github.com/piterweb/mc-sync/src"
+	"github.com/pterm/pterm"
 	"github.com/pterm/pterm/putils"
 )
-
-//go:embed serviceAccountKey.json
-var credentialsFile []byte
-
-//go:embed .env
-var envData []byte
-
-//go:embed accounts.toml
-var accountData []byte
 
 var ctx = context.Background()
 
 func main() {
 
 	pterm.Println()
-	pterm.DefaultBigText.WithLetters(putils.LettersFromStringWithStyle("MC-Sync-Upload", pterm.NewStyle(pterm.FgCyan))).Render()
+	pterm.DefaultBigText.WithLetters(putils.LettersFromStringWithStyle("MC-Sync", pterm.NewStyle(pterm.FgCyan))).Render()
 
 	pterm.Println()
 
@@ -46,7 +39,7 @@ func main() {
 
 		if info.IsDir() {
 			if path != "." && !strings.Contains(path, "\\") {
-				folders = append(folders,  path)
+				folders = append(folders, path)
 			}
 		}
 		return nil
@@ -61,14 +54,20 @@ func main() {
 	var folderName string
 
 	folderName, _ = pterm.DefaultInteractiveSelect.WithDefaultText("-> Seleccione el mundo").
-	WithOptions(folders).
-	Show()
+		WithOptions(folders).
+		Show()
 
 	pterm.Println()
 
 	pterm.Info.Println("Aplicando Configuraciones 🔨")
 
-	err = setPlayersConfig(folderName)
+	rawConfig, err := os.ReadFile("./config.toml")
+
+	if err != nil {
+		pterm.Fatal.Println(err)
+	}
+
+	err = src.SetPlayersConfig(folderName, rawConfig)
 
 	if err != nil {
 		pterm.Fatal.Println(err)
@@ -78,7 +77,7 @@ func main() {
 
 	var zipFileName string = folderName + "-" + currentTime + ".zip"
 
-	zipSource(folderName, "./"+zipFileName)
+	src.ZipSource(folderName, "./"+zipFileName)
 
 	fileData, err := os.ReadFile(zipFileName)
 
@@ -91,16 +90,16 @@ func main() {
 	var options = []string{
 		"Subir a la nube ☁",
 		"Mandar por url 🔗",
-	};
+	}
 
 	pterm.Println()
 	option, _ = pterm.DefaultInteractiveSelect.WithDefaultText("-> Seleccione un método de descarga").
-	WithOptions(options).
-	Show()
+		WithOptions(options).
+		Show()
 
 	if option == options[0] {
 
-		err = uploadWorld(zipFileName, fileData)
+		err = src.UploadWorld(rawConfig, zipFileName, fileData)
 
 		if err != nil {
 			pterm.Fatal.Println(err)
@@ -116,7 +115,7 @@ func main() {
 
 	} else if option == options[1] {
 
-		err = serveWorld(zipFileName)
+		err = src.ServeWorld(zipFileName)
 
 		if err != nil {
 			pterm.Fatal.Println(err)

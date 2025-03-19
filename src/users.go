@@ -1,4 +1,4 @@
-package main
+package src
 
 type Users struct {
 	Users []User `toml:"users"`
