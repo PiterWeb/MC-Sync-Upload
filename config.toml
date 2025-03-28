@@ -1,8 +1,8 @@
 ST_BUCKET = "" # bucket domain name
 
 [[users]]
-offlineUuid = "9c9774ec-892d-34fb-acd5-896c0b17cb5e" #example uuid (MC cracked) https://top-minecraft.com/tools/offline-uuid.php
-uuid = "4cc0f07d-f1ae-4b4f-a019-cad35bb668rs" #example uuid (MC premium) https://mcuuid.net/
+offlineUuid = "5627dd98-e6be-3c21-b8a8-e92344183641" #example uuid (MC cracked) https://mclist.io/tools/minecraft-offline-uuid
+uuid = "8667ba71-b85a-4004-af54-457a9734eed7" #example uuid (MC premium) https://mcuuid.net/
 name = "Steve" # MC username
 
 # Repeat this with all the users that will host
