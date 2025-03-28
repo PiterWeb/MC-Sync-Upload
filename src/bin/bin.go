@@ -29,18 +29,18 @@ func UseAnvilPacker(worldPath string, outputName string, op int) ([]byte, error)
 	}
 
 	if op == OpPack {
-		return UseAnvilPackerPack(worldPath, outputName)
+		return useAnvilPackerPack(worldPath, outputName)
 	} else if op == OpUnpack {
-		return UseAnvilPackerUnpack(worldPath, outputName)
+		return useAnvilPackerUnpack(worldPath, outputName)
 	} else {
 		return nil, fmt.Errorf("Invalid operation")
 	}
 
 }
 
-func UseAnvilPackerPack(worldPath string, outputName string) ([]byte, error) {
+func useAnvilPackerPack(worldPath string, outputName string) ([]byte, error) {
 
-	err := exec.Command("./"+programFolder+"/AnvilPacker", "pack", "-i", worldPath, "-o", outputName, "--preset", "smaller").Run()
+	err := exec.Command("./"+filepath.Join(programFolder, "AnvilPacker"), "pack", "-i", worldPath, "-o", outputName, "--preset", "smaller").Run()
 
 	if err != nil {
 		return nil, err
@@ -55,7 +55,14 @@ func UseAnvilPackerPack(worldPath string, outputName string) ([]byte, error) {
 	return fileCompressed, nil
 }
 
-func UseAnvilPackerUnpack(worldPath string, outputName string) ([]byte, error) {
+func useAnvilPackerUnpack(worldPath string, outputName string) ([]byte, error) {
+
+	err := exec.Command("./"+filepath.Join(programFolder, "AnvilPacker"), "unpack", "-i", worldPath, "-o", outputName).Run()
+
+	if err != nil {
+		return nil, err
+	}
+
 	return []byte{}, fmt.Errorf("AnvilPackerUnpack not implemented")
 }
 
