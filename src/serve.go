@@ -26,7 +26,7 @@ func ServeWorld(name string) error {
 		if method == "GET" {
 
 			ctx.Response.Header.Set("Name", name)
-			ctx.Response.Header.Set("Content-Type", "application/zip")
+			ctx.Response.Header.Set("Content-Type", "application/octet-stream")
 
 			ctx.SendFile(name)
 

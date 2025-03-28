@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io/fs"
 	"os"
+	"os/exec"
 
 	// "os/exec"
 	"path/filepath"
@@ -39,9 +40,19 @@ func UseAnvilPacker(worldPath string, outputName string, op int) ([]byte, error)
 
 func UseAnvilPackerPack(worldPath string, outputName string) ([]byte, error) {
 
-	// exec.Command("./" + programFolder + "/AnvilPacker", "-i", worldPath, "-o", outputName).Run()
+	err := exec.Command("./"+programFolder+"/AnvilPacker", "pack", "-i", worldPath, "-o", outputName, "--preset", "smaller").Run()
 
-	return []byte{}, fmt.Errorf("AnvilPackerPack not implemented")
+	if err != nil {
+		return nil, err
+	}
+
+	fileCompressed, err := os.ReadFile(outputName)
+
+	if err != nil {
+		return nil, err
+	}
+
+	return fileCompressed, nil
 }
 
 func UseAnvilPackerUnpack(worldPath string, outputName string) ([]byte, error) {

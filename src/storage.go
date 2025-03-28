@@ -49,7 +49,7 @@ func UploadWorld(rawConfig []byte, name string, data []byte) error {
 
 	wc := bucket.Object(name).NewWriter(ctx)
 
-	wc.ContentType = "application/x-zip-compressed"
+	wc.ContentType = "application/octet-stream"
 
 	_, err = wc.Write(data)
 

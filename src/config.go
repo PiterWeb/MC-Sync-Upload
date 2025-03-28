@@ -4,6 +4,7 @@ import (
 	"crypto/md5"
 	"encoding/hex"
 	"encoding/json"
+	"fmt"
 	"io"
 	"net/http"
 	"os"
@@ -14,7 +15,7 @@ import (
 	"github.com/BurntSushi/toml"
 )
 
-var configFileMut sync.Mutex
+var configFileMutex sync.Mutex
 
 func SetPlayersConfig(folderName string, rawConfig []byte) error {
 
@@ -92,6 +93,10 @@ func getUUID(name string) (string, error) {
 
 	defer res.Body.Close()
 
+	if res.StatusCode != 200 {
+		return "", err
+	}
+
 	body, err := io.ReadAll(res.Body)
 
 	if err != nil {
@@ -113,6 +118,10 @@ func getUUID(name string) (string, error) {
 		return "", err
 	}
 
+	if len(mcResponse.ID) < 20 {
+		return "", fmt.Errorf("uuid obtained is not correct")
+	}
+
 	UUID := mcResponse.ID[0:8] + "-" + mcResponse.ID[8:12] + "-" + mcResponse.ID[12:16] + "-" + mcResponse.ID[16:20] + "-" + mcResponse.ID[20:]
 
 	return UUID, nil
@@ -131,9 +140,9 @@ func setUserConfig(statsDirectory string, playerdataDirectory string, user User)
 		}
 
 		if user.Uuid != "" || user.OfflineUuid != "" {
-			configFileMut.Lock()
-			defer configFileMut.Unlock()
-
+			configFileMutex.Lock()
+			defer configFileMutex.Unlock()
+			// TODO: write the new UUIDs to the TOML Config file
 		}
 	}
 
