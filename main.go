@@ -1,7 +1,6 @@
 package main
 
 import (
-	"context"
 	_ "embed"
 	"os"
 	"path/filepath"
@@ -9,16 +8,19 @@ import (
 	"time"
 
 	"github.com/piterweb/mc-sync/src"
+	"github.com/piterweb/mc-sync/src/bin"
 	"github.com/pterm/pterm"
 	"github.com/pterm/pterm/putils"
 )
 
-var ctx = context.Background()
-
 func main() {
 
 	pterm.Println()
-	pterm.DefaultBigText.WithLetters(putils.LettersFromStringWithStyle("MC-Sync", pterm.NewStyle(pterm.FgCyan))).Render()
+	err := pterm.DefaultBigText.WithLetters(putils.LettersFromStringWithStyle("MC-Sync", pterm.NewStyle(pterm.FgCyan))).Render()
+
+	if err != nil {
+		pterm.Fatal.Println(err)
+	}
 
 	pterm.Println()
 
@@ -30,9 +32,9 @@ func main() {
 
 	pterm.Println()
 
-	var folders []string
+	folders := []string{}
 
-	err := filepath.Walk(".", func(path string, info os.FileInfo, err error) error {
+	err = filepath.Walk(".", func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err
 		}
@@ -45,6 +47,10 @@ func main() {
 		return nil
 
 	})
+
+	if err != nil {
+		pterm.Fatal.Println(err)
+	}
 
 	if len(folders) == 0 {
 		pterm.Error.Println("🚫 No se encontraron carpetas")
@@ -61,7 +67,7 @@ func main() {
 
 	pterm.Info.Println("Aplicando Configuraciones 🔨")
 
-	rawConfig, err := os.ReadFile("./config.toml")
+	rawConfig, err := os.ReadFile("./" + filepath.Join(folderName, "config.toml"))
 
 	if err != nil {
 		pterm.Fatal.Println(err)
@@ -75,11 +81,9 @@ func main() {
 
 	var currentTime = time.Now().Format("2006-01-02")
 
-	var zipFileName string = folderName + "-" + currentTime + ".zip"
+	compressedFileName := folderName + "-" + currentTime + ".apw"
 
-	src.ZipSource(folderName, "./"+zipFileName)
-
-	fileData, err := os.ReadFile(zipFileName)
+	fileData, err := bin.UseAnvilPacker(folderName, compressedFileName, bin.OpPack)
 
 	if err != nil {
 		pterm.Fatal.Println(err)
@@ -99,7 +103,7 @@ func main() {
 
 	if option == options[0] {
 
-		err = src.UploadWorld(rawConfig, zipFileName, fileData)
+		err = src.UploadWorld(rawConfig, compressedFileName, fileData)
 
 		if err != nil {
 			pterm.Fatal.Println(err)
@@ -115,7 +119,7 @@ func main() {
 
 	} else if option == options[1] {
 
-		err = src.ServeWorld(zipFileName)
+		err = src.ServeWorld(compressedFileName)
 
 		if err != nil {
 			pterm.Fatal.Println(err)
@@ -123,7 +127,7 @@ func main() {
 
 	}
 
-	os.Remove(zipFileName)
+	os.Remove(compressedFileName)
 
 	time.Sleep(time.Second * 5)
 
