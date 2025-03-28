@@ -1,0 +1,5569 @@
+{
+  "version": "1.17.1",
+  "worldVersion": 2730,
+  "numBlockStates": 20342,
+  "blocks": [
+    {
+      "names": ["air", "void_air", "cave_air"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "air",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 0
+      }
+    },
+    {
+      "names": ["stone", "granite", "polished_granite", "diorite", "polished_diorite", "andesite", "polished_andesite", "cobblestone", "bedrock", "gold_ore", "deepslate_gold_ore", "iron_ore", "deepslate_iron_ore", "coal_ore", "deepslate_coal_ore", "nether_gold_ore", "lapis_ore", "deepslate_lapis_ore", "sandstone", "chiseled_sandstone", "cut_sandstone", "bricks", "mossy_cobblestone", "obsidian", "diamond_ore", "deepslate_diamond_ore", "netherrack", "stone_bricks", "mossy_stone_bricks", "cracked_stone_bricks", "chiseled_stone_bricks", "nether_bricks", "end_stone", "emerald_ore", "deepslate_emerald_ore", "nether_quartz_ore", "quartz_block", "chiseled_quartz_block", "white_terracotta", "orange_terracotta", "magenta_terracotta", "light_blue_terracotta", "yellow_terracotta", "lime_terracotta", "pink_terracotta", "gray_terracotta", "light_gray_terracotta", "cyan_terracotta", "purple_terracotta", "blue_terracotta", "brown_terracotta", "green_terracotta", "red_terracotta", "black_terracotta", "prismarine", "prismarine_bricks", "dark_prismarine", "terracotta", "coal_block", "red_sandstone", "chiseled_red_sandstone", "cut_red_sandstone", "smooth_stone", "smooth_sandstone", "smooth_quartz", "smooth_red_sandstone", "purpur_block", "end_stone_bricks", "red_nether_bricks", "white_concrete", "orange_concrete", "magenta_concrete", "light_blue_concrete", "yellow_concrete", "lime_concrete", "pink_concrete", "gray_concrete", "light_gray_concrete", "cyan_concrete", "purple_concrete", "blue_concrete", "brown_concrete", "green_concrete", "red_concrete", "black_concrete", "dead_tube_coral_block", "dead_brain_coral_block", "dead_bubble_coral_block", "dead_fire_coral_block", "dead_horn_coral_block", "tube_coral_block", "brain_coral_block", "bubble_coral_block", "fire_coral_block", "horn_coral_block", "blackstone", "polished_blackstone", "polished_blackstone_bricks", "cracked_polished_blackstone_bricks", "chiseled_polished_blackstone", "gilded_blackstone", "chiseled_nether_bricks", "cracked_nether_bricks", "quartz_bricks", "tuff", "calcite", "copper_ore", "deepslate_copper_ore", "dripstone_block", "cobbled_deepslate", "polished_deepslate", "deepslate_tiles", "deepslate_bricks", "chiseled_deepslate", "cracked_deepslate_bricks", "cracked_deepslate_tiles", "smooth_basalt", "raw_iron_block", "raw_copper_block", "raw_gold_block"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "stone",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["grass_block", "mycelium"],
+      "numStates": 2,
+      "defaultStateId": 1,
+      "material": "grass",
+      "properties": [
+        {
+          "name": "snowy",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 21,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["dirt", "coarse_dirt", "soul_soil", "rooted_dirt"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "dirt",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["podzol"],
+      "numStates": 2,
+      "defaultStateId": 1,
+      "material": "dirt",
+      "properties": [
+        {
+          "name": "snowy",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["oak_planks", "spruce_planks", "birch_planks", "jungle_planks", "acacia_planks", "dark_oak_planks", "bookshelf", "crafting_table", "cartography_table", "fletching_table", "smithing_table"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "wood",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["oak_sapling", "spruce_sapling", "birch_sapling", "jungle_sapling", "acacia_sapling", "dark_oak_sapling"],
+      "numStates": 2,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [
+        {
+          "min": 0,
+          "max": 1,
+          "name": "stage",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 18,
+        "light": 0,
+        "occlusionShapes": 2
+      }
+    },
+    {
+      "names": ["water"],
+      "numStates": 16,
+      "defaultStateId": 0,
+      "material": "water",
+      "properties": [
+        {
+          "min": 0,
+          "max": 15,
+          "name": "level",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 64,
+        "light": 1,
+        "occlusionShapes": 0
+      }
+    },
+    {
+      "names": ["lava"],
+      "numStates": 16,
+      "defaultStateId": 0,
+      "material": "lava",
+      "properties": [
+        {
+          "min": 0,
+          "max": 15,
+          "name": "level",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 80,
+        "light": 241,
+        "occlusionShapes": 0
+      }
+    },
+    {
+      "names": ["sand", "red_sand", "gravel", "white_concrete_powder", "orange_concrete_powder", "magenta_concrete_powder", "light_blue_concrete_powder", "yellow_concrete_powder", "lime_concrete_powder", "pink_concrete_powder", "gray_concrete_powder", "light_gray_concrete_powder", "cyan_concrete_powder", "purple_concrete_powder", "blue_concrete_powder", "brown_concrete_powder", "green_concrete_powder", "red_concrete_powder", "black_concrete_powder"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "sand",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["oak_log", "spruce_log", "birch_log", "jungle_log", "acacia_log", "dark_oak_log", "stripped_spruce_log", "stripped_birch_log", "stripped_jungle_log", "stripped_acacia_log", "stripped_dark_oak_log", "stripped_oak_log", "oak_wood", "spruce_wood", "birch_wood", "jungle_wood", "acacia_wood", "dark_oak_wood", "stripped_oak_wood", "stripped_spruce_wood", "stripped_birch_wood", "stripped_jungle_wood", "stripped_acacia_wood", "stripped_dark_oak_wood"],
+      "numStates": 3,
+      "defaultStateId": 1,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "Axis",
+          "values": ["x", "y", "z"],
+          "name": "axis",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["oak_leaves", "spruce_leaves", "birch_leaves", "jungle_leaves", "acacia_leaves", "dark_oak_leaves", "azalea_leaves", "flowering_azalea_leaves"],
+      "numStates": 14,
+      "defaultStateId": 13,
+      "material": "leaves",
+      "properties": [
+        {
+          "min": 1,
+          "max": 7,
+          "name": "distance",
+          "type": "int"
+        },
+        {
+          "name": "persistent",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 20],
+        "light": 1,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["sponge", "wet_sponge"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "sponge",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["glass", "white_stained_glass", "orange_stained_glass", "magenta_stained_glass", "light_blue_stained_glass", "yellow_stained_glass", "lime_stained_glass", "pink_stained_glass", "gray_stained_glass", "light_gray_stained_glass", "cyan_stained_glass", "purple_stained_glass", "blue_stained_glass", "brown_stained_glass", "green_stained_glass", "red_stained_glass", "black_stained_glass"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "glass",
+      "properties": [],
+      "states": {
+        "flags": 6,
+        "light": 0,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["lapis_block", "gold_block", "iron_block", "diamond_block", "emerald_block", "netherite_block", "ancient_debris", "oxidized_copper", "oxidized_cut_copper", "waxed_copper_block", "waxed_weathered_copper", "waxed_exposed_copper", "waxed_oxidized_copper", "waxed_oxidized_cut_copper", "waxed_weathered_cut_copper", "waxed_exposed_cut_copper", "waxed_cut_copper"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "metal",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["dispenser", "dropper"],
+      "numStates": 12,
+      "defaultStateId": 6,
+      "material": "stone",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "east", "south", "west", "up", "down"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "triggered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["note_block"],
+      "numStates": 800,
+      "defaultStateId": 400,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "NoteBlockInstrument",
+          "values": ["harp", "basedrum", "snare", "hat", "bass", "flute", "bell", "guitar", "chime", "xylophone", "iron_xylophone", "cow_bell", "didgeridoo", "bit", "banjo", "pling"],
+          "name": "instrument",
+          "type": "enum"
+        },
+        {
+          "min": 0,
+          "max": 24,
+          "name": "note",
+          "type": "int"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["white_bed", "orange_bed", "magenta_bed", "light_blue_bed", "yellow_bed", "lime_bed", "pink_bed", "gray_bed", "light_gray_bed", "cyan_bed", "purple_bed", "blue_bed", "brown_bed", "green_bed", "red_bed", "black_bed"],
+      "numStates": 16,
+      "defaultStateId": 12,
+      "material": "wool",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "occupied",
+          "type": "bool"
+        },
+        {
+          "enumType": "BedPart",
+          "values": ["head", "foot"],
+          "name": "part",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": [3, 4, 5, 6, 3, 4, 5, 6, 4, 3, 6, 5, 4, 3, 6, 5]
+      }
+    },
+    {
+      "names": ["powered_rail", "activator_rail"],
+      "numStates": 24,
+      "defaultStateId": 13,
+      "material": "decoration",
+      "properties": [
+        {
+          "name": "powered",
+          "type": "bool"
+        },
+        {
+          "enumType": "RailShape",
+          "values": ["north_south", "east_west", "ascending_east", "ascending_west", "ascending_north", "ascending_south"],
+          "name": "shape",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8]
+      }
+    },
+    {
+      "names": ["detector_rail"],
+      "numStates": 24,
+      "defaultStateId": 13,
+      "material": "decoration",
+      "properties": [
+        {
+          "name": "powered",
+          "type": "bool"
+        },
+        {
+          "enumType": "RailShape",
+          "values": ["north_south", "east_west", "ascending_east", "ascending_west", "ascending_north", "ascending_south"],
+          "name": "shape",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8]
+      }
+    },
+    {
+      "names": ["sticky_piston", "piston"],
+      "numStates": 12,
+      "defaultStateId": 1,
+      "material": "piston",
+      "properties": [
+        {
+          "name": "extended",
+          "type": "bool"
+        },
+        {
+          "enumType": "Direction",
+          "values": ["north", "east", "south", "west", "up", "down"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": [11, 5, 11, 5, 11, 5, 11, 5, 11, 5, 11, 5],
+        "light": [0, 15, 0, 15, 0, 15, 0, 15, 0, 15, 0, 15],
+        "occlusionShapes": [9, 1, 10, 1, 11, 1, 12, 1, 13, 1, 14, 1]
+      }
+    },
+    {
+      "names": ["cobweb"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "cobweb",
+      "properties": [],
+      "states": {
+        "flags": 0,
+        "light": 1,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["grass", "fern", "dead_bush"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "replaceable_plant",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 15
+      }
+    },
+    {
+      "names": ["seagrass"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "replaceable_water_plant",
+      "properties": [],
+      "states": {
+        "flags": 64,
+        "light": 1,
+        "occlusionShapes": 2
+      }
+    },
+    {
+      "names": ["tall_seagrass"],
+      "numStates": 2,
+      "defaultStateId": 1,
+      "material": "replaceable_water_plant",
+      "properties": [
+        {
+          "enumType": "DoubleBlockHalf",
+          "values": ["upper", "lower"],
+          "name": "half",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 64,
+        "light": 1,
+        "occlusionShapes": 16
+      }
+    },
+    {
+      "names": ["piston_head"],
+      "numStates": 24,
+      "defaultStateId": 6,
+      "material": "piston",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "east", "south", "west", "up", "down"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "short",
+          "type": "bool"
+        },
+        {
+          "enumType": "PistonType",
+          "values": ["normal", "sticky"],
+          "name": "type",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 11,
+        "light": 0,
+        "occlusionShapes": [17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+      }
+    },
+    {
+      "names": ["white_wool", "orange_wool", "magenta_wool", "light_blue_wool", "yellow_wool", "lime_wool", "pink_wool", "gray_wool", "light_gray_wool", "cyan_wool", "purple_wool", "blue_wool", "brown_wool", "green_wool", "red_wool", "black_wool"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "wool",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["moving_piston"],
+      "numStates": 12,
+      "defaultStateId": 0,
+      "material": "piston",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "east", "south", "west", "up", "down"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "PistonType",
+          "values": ["normal", "sticky"],
+          "name": "type",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 130,
+        "light": 0,
+        "occlusionShapes": 0
+      }
+    },
+    {
+      "names": ["dandelion", "poppy", "blue_orchid", "allium", "azure_bluet", "red_tulip", "orange_tulip", "white_tulip", "pink_tulip", "oxeye_daisy", "cornflower", "wither_rose", "lily_of_the_valley"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 29
+      }
+    },
+    {
+      "names": ["brown_mushroom"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [],
+      "states": {
+        "flags": 18,
+        "light": 16,
+        "occlusionShapes": 30
+      }
+    },
+    {
+      "names": ["red_mushroom"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [],
+      "states": {
+        "flags": 18,
+        "light": 0,
+        "occlusionShapes": 30
+      }
+    },
+    {
+      "names": ["tnt"],
+      "numStates": 2,
+      "defaultStateId": 1,
+      "material": "tnt",
+      "properties": [
+        {
+          "name": "unstable",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["torch"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "decoration",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 224,
+        "occlusionShapes": 31
+      }
+    },
+    {
+      "names": ["wall_torch"],
+      "numStates": 4,
+      "defaultStateId": 0,
+      "material": "decoration",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 224,
+        "occlusionShapes": [32, 33, 34, 35]
+      }
+    },
+    {
+      "names": ["fire"],
+      "numStates": 512,
+      "defaultStateId": 496,
+      "material": "fire",
+      "properties": [
+        {
+          "min": 0,
+          "max": 15,
+          "name": "age",
+          "type": "int"
+        },
+        {
+          "name": "east",
+          "type": "bool"
+        },
+        {
+          "name": "north",
+          "type": "bool"
+        },
+        {
+          "name": "south",
+          "type": "bool"
+        },
+        {
+          "name": "up",
+          "type": "bool"
+        },
+        {
+          "name": "west",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 240,
+        "occlusionShapes": [36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 41, 41, 41, 41, 41, 41, 41, 41, 41, 41, 41, 41, 41, 41, 41, 41, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 51, 51, 51, 51, 51, 51, 51, 51, 51, 51, 51, 51, 51, 51, 51, 51, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 54, 54, 54, 54, 54, 54, 54, 54, 54, 54, 54, 54, 54, 54, 54, 54, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62, 62, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67]
+      }
+    },
+    {
+      "names": ["soul_fire"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "fire",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 160,
+        "occlusionShapes": 67
+      }
+    },
+    {
+      "names": ["spawner"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "stone",
+      "properties": [],
+      "states": {
+        "flags": 4,
+        "light": 1,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["oak_stairs", "spruce_stairs", "birch_stairs", "jungle_stairs", "acacia_stairs", "dark_oak_stairs"],
+      "numStates": 80,
+      "defaultStateId": 44,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "Half",
+          "values": ["top", "bottom"],
+          "name": "half",
+          "type": "enum"
+        },
+        {
+          "enumType": "StairsShape",
+          "values": ["straight", "inner_left", "inner_right", "outer_left", "outer_right"],
+          "name": "shape",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 79, 78, 76, 77, 83, 82, 80, 81, 84, 85, 86, 87, 88, 89, 90, 91, 87, 86, 84, 85, 91, 90, 88, 89, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 79, 78, 76, 77, 83, 82, 80, 81, 84, 85, 86, 87, 88, 89, 90, 91, 87, 86, 84, 85, 91, 90, 88, 89]
+      }
+    },
+    {
+      "names": ["chest"],
+      "numStates": 24,
+      "defaultStateId": 12,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "ChestType",
+          "values": ["single", "left", "right"],
+          "name": "type",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [92, 92, 92, 92, 93, 94, 95, 96, 94, 93, 96, 95, 92, 92, 92, 92, 93, 94, 95, 96, 94, 93, 96, 95]
+      }
+    },
+    {
+      "names": ["redstone_wire"],
+      "numStates": 1296,
+      "defaultStateId": 1160,
+      "material": "decoration",
+      "properties": [
+        {
+          "enumType": "RedstoneSide",
+          "values": ["up", "side", "none"],
+          "name": "east",
+          "type": "enum"
+        },
+        {
+          "enumType": "RedstoneSide",
+          "values": ["up", "side", "none"],
+          "name": "north",
+          "type": "enum"
+        },
+        {
+          "min": 0,
+          "max": 15,
+          "name": "power",
+          "type": "int"
+        },
+        {
+          "enumType": "RedstoneSide",
+          "values": ["up", "side", "none"],
+          "name": "south",
+          "type": "enum"
+        },
+        {
+          "enumType": "RedstoneSide",
+          "values": ["up", "side", "none"],
+          "name": "west",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 34,
+        "light": 0,
+        "occlusionShapes": [97, 98, 99, 100, 101, 102, 103, 104, 105, 97, 98, 99, 100, 101, 102, 103, 104, 105, 97, 98, 99, 100, 101, 102, 103, 104, 105, 97, 98, 99, 100, 101, 102, 103, 104, 105, 97, 98, 99, 100, 101, 102, 103, 104, 105, 97, 98, 99, 100, 101, 102, 103, 104, 105, 97, 98, 99, 100, 101, 102, 103, 104, 105, 97, 98, 99, 100, 101, 102, 103, 104, 105, 97, 98, 99, 100, 101, 102, 103, 104, 105, 97, 98, 99, 100, 101, 102, 103, 104, 105, 97, 98, 99, 100, 101, 102, 103, 104, 105, 97, 98, 99, 100, 101, 102, 103, 104, 105, 97, 98, 99, 100, 101, 102, 103, 104, 105, 97, 98, 99, 100, 101, 102, 103, 104, 105, 97, 98, 99, 100, 101, 102, 103, 104, 105, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 106, 107, 108, 109, 110, 111, 112, 113, 114, 106, 107, 108, 109, 110, 111, 112, 113, 114, 106, 107, 108, 109, 110, 111, 112, 113, 114, 106, 107, 108, 109, 110, 111, 112, 113, 114, 106, 107, 108, 109, 110, 111, 112, 113, 114, 106, 107, 108, 109, 110, 111, 112, 113, 114, 106, 107, 108, 109, 110, 111, 112, 113, 114, 106, 107, 108, 109, 110, 111, 112, 113, 114, 106, 107, 108, 109, 110, 111, 112, 113, 114, 106, 107, 108, 109, 110, 111, 112, 113, 114, 106, 107, 108, 109, 110, 111, 112, 113, 114, 106, 107, 108, 109, 110, 111, 112, 113, 114, 106, 107, 108, 109, 110, 111, 112, 113, 114, 106, 107, 108, 109, 110, 111, 112, 113, 114, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 115, 116, 117, 118, 119, 120, 121, 122, 123, 115, 116, 117, 118, 119, 120, 121, 122, 123, 115, 116, 117, 118, 119, 120, 121, 122, 123, 115, 116, 117, 118, 119, 120, 121, 122, 123, 115, 116, 117, 118, 119, 120, 121, 122, 123, 115, 116, 117, 118, 119, 120, 121, 122, 123, 115, 116, 117, 118, 119, 120, 121, 122, 123, 115, 116, 117, 118, 119, 120, 121, 122, 123, 115, 116, 117, 118, 119, 120, 121, 122, 123, 115, 116, 117, 118, 119, 120, 121, 122, 123, 115, 116, 117, 118, 119, 120, 121, 122, 123, 115, 116, 117, 118, 119, 120, 121, 122, 123, 115, 116, 117, 118, 119, 120, 121, 122, 123, 115, 116, 117, 118, 119, 120, 121, 122, 123, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 124, 125, 126, 127, 128, 129, 130, 131, 132, 124, 125, 126, 127, 128, 129, 130, 131, 132, 124, 125, 126, 127, 128, 129, 130, 131, 132, 124, 125, 126, 127, 128, 129, 130, 131, 132, 124, 125, 126, 127, 128, 129, 130, 131, 132, 124, 125, 126, 127, 128, 129, 130, 131, 132, 124, 125, 126, 127, 128, 129, 130, 131, 132, 124, 125, 126, 127, 128, 129, 130, 131, 132, 124, 125, 126, 127, 128, 129, 130, 131, 132, 124, 125, 126, 127, 128, 129, 130, 131, 132, 124, 125, 126, 127, 128, 129, 130, 131, 132, 124, 125, 126, 127, 128, 129, 130, 131, 132, 124, 125, 126, 127, 128, 129, 130, 131, 132, 124, 125, 126, 127, 128, 129, 130, 131, 132, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 133, 134, 135, 136, 137, 138, 139, 140, 141, 133, 134, 135, 136, 137, 138, 139, 140, 141, 133, 134, 135, 136, 137, 138, 139, 140, 141, 133, 134, 135, 136, 137, 138, 139, 140, 141, 133, 134, 135, 136, 137, 138, 139, 140, 141, 133, 134, 135, 136, 137, 138, 139, 140, 141, 133, 134, 135, 136, 137, 138, 139, 140, 141, 133, 134, 135, 136, 137, 138, 139, 140, 141, 133, 134, 135, 136, 137, 138, 139, 140, 141, 133, 134, 135, 136, 137, 138, 139, 140, 141, 133, 134, 135, 136, 137, 138, 139, 140, 141, 133, 134, 135, 136, 137, 138, 139, 140, 141, 133, 134, 135, 136, 137, 138, 139, 140, 141, 133, 134, 135, 136, 137, 138, 139, 140, 141, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 142, 143, 144, 145, 146, 147, 148, 149, 150, 142, 143, 144, 145, 146, 147, 148, 149, 150, 142, 143, 144, 145, 146, 147, 148, 149, 150, 142, 143, 144, 145, 146, 147, 148, 149, 150, 142, 143, 144, 145, 146, 147, 148, 149, 150, 142, 143, 144, 145, 146, 147, 148, 149, 150, 142, 143, 144, 145, 146, 147, 148, 149, 150, 142, 143, 144, 145, 146, 147, 148, 149, 150, 142, 143, 144, 145, 146, 147, 148, 149, 150, 142, 143, 144, 145, 146, 147, 148, 149, 150, 142, 143, 144, 145, 146, 147, 148, 149, 150, 142, 143, 144, 145, 146, 147, 148, 149, 150, 142, 143, 144, 145, 146, 147, 148, 149, 150, 142, 143, 144, 145, 146, 147, 148, 149, 150, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 151, 152, 153, 154, 155, 156, 157, 158, 159, 151, 152, 153, 154, 155, 156, 157, 158, 159, 151, 152, 153, 154, 155, 156, 157, 158, 159, 151, 152, 153, 154, 155, 156, 157, 158, 159, 151, 152, 153, 154, 155, 156, 157, 158, 159, 151, 152, 153, 154, 155, 156, 157, 158, 159, 151, 152, 153, 154, 155, 156, 157, 158, 159, 151, 152, 153, 154, 155, 156, 157, 158, 159, 151, 152, 153, 154, 155, 156, 157, 158, 159, 151, 152, 153, 154, 155, 156, 157, 158, 159, 151, 152, 153, 154, 155, 156, 157, 158, 159, 151, 152, 153, 154, 155, 156, 157, 158, 159, 151, 152, 153, 154, 155, 156, 157, 158, 159, 151, 152, 153, 154, 155, 156, 157, 158, 159, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 160, 161, 162, 163, 164, 165, 166, 167, 168, 160, 161, 162, 163, 164, 165, 166, 167, 168, 160, 161, 162, 163, 164, 165, 166, 167, 168, 160, 161, 162, 163, 164, 165, 166, 167, 168, 160, 161, 162, 163, 164, 165, 166, 167, 168, 160, 161, 162, 163, 164, 165, 166, 167, 168, 160, 161, 162, 163, 164, 165, 166, 167, 168, 160, 161, 162, 163, 164, 165, 166, 167, 168, 160, 161, 162, 163, 164, 165, 166, 167, 168, 160, 161, 162, 163, 164, 165, 166, 167, 168, 160, 161, 162, 163, 164, 165, 166, 167, 168, 160, 161, 162, 163, 164, 165, 166, 167, 168, 160, 161, 162, 163, 164, 165, 166, 167, 168, 160, 161, 162, 163, 164, 165, 166, 167, 168, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 169, 170, 171, 172, 173, 174, 175, 176, 177, 169, 170, 171, 172, 173, 174, 175, 176, 177, 169, 170, 171, 172, 173, 174, 175, 176, 177, 169, 170, 171, 172, 173, 174, 175, 176, 177, 169, 170, 171, 172, 173, 174, 175, 176, 177, 169, 170, 171, 172, 173, 174, 175, 176, 177, 169, 170, 171, 172, 173, 174, 175, 176, 177, 169, 170, 171, 172, 173, 174, 175, 176, 177, 169, 170, 171, 172, 173, 174, 175, 176, 177, 169, 170, 171, 172, 173, 174, 175, 176, 177, 169, 170, 171, 172, 173, 174, 175, 176, 177, 169, 170, 171, 172, 173, 174, 175, 176, 177, 169, 170, 171, 172, 173, 174, 175, 176, 177, 169, 170, 171, 172, 173, 174, 175, 176, 177, 169, 170, 171, 172, 173, 174, 175, 176, 177]
+      }
+    },
+    {
+      "names": ["wheat"],
+      "numStates": 8,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [
+        {
+          "min": 0,
+          "max": 7,
+          "name": "age",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": [18, 18, 18, 18, 18, 18, 18, 2],
+        "light": 0,
+        "occlusionShapes": [7, 178, 179, 8, 180, 13, 181, 1]
+      }
+    },
+    {
+      "names": ["farmland"],
+      "numStates": 8,
+      "defaultStateId": 0,
+      "material": "dirt",
+      "properties": [
+        {
+          "min": 0,
+          "max": 7,
+          "name": "moisture",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 27,
+        "light": 0,
+        "occlusionShapes": 182
+      }
+    },
+    {
+      "names": ["furnace", "smoker", "blast_furnace"],
+      "numStates": 8,
+      "defaultStateId": 4,
+      "material": "stone",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "lit",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": [223, 223, 223, 223, 15, 15, 15, 15],
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["oak_sign", "spruce_sign", "birch_sign", "acacia_sign", "jungle_sign", "dark_oak_sign"],
+      "numStates": 32,
+      "defaultStateId": 16,
+      "material": "wood",
+      "properties": [
+        {
+          "min": 0,
+          "max": 15,
+          "name": "rotation",
+          "type": "int"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": 183
+      }
+    },
+    {
+      "names": ["oak_door", "spruce_door", "birch_door", "jungle_door", "acacia_door", "dark_oak_door"],
+      "numStates": 64,
+      "defaultStateId": 52,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "DoubleBlockHalf",
+          "values": ["upper", "lower"],
+          "name": "half",
+          "type": "enum"
+        },
+        {
+          "enumType": "DoorHingeSide",
+          "values": ["left", "right"],
+          "name": "hinge",
+          "type": "enum"
+        },
+        {
+          "name": "open",
+          "type": "bool"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": [184, 185, 186, 187, 184, 185, 186, 187, 185, 184, 187, 186, 185, 184, 187, 186, 186, 187, 185, 184, 186, 187, 185, 184, 186, 187, 185, 184, 186, 187, 185, 184, 184, 185, 186, 187, 184, 185, 186, 187, 185, 184, 187, 186, 185, 184, 187, 186, 186, 187, 185, 184, 186, 187, 185, 184, 186, 187, 185, 184, 186, 187, 185, 184]
+      }
+    },
+    {
+      "names": ["ladder"],
+      "numStates": 8,
+      "defaultStateId": 4,
+      "material": "decoration",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 0, 0, 0, 0],
+        "occlusionShapes": [186, 187, 185, 184, 186, 187, 185, 184]
+      }
+    },
+    {
+      "names": ["rail"],
+      "numStates": 20,
+      "defaultStateId": 10,
+      "material": "decoration",
+      "properties": [
+        {
+          "enumType": "RailShape",
+          "values": ["north_south", "east_west", "ascending_east", "ascending_west", "ascending_north", "ascending_south", "south_east", "south_west", "north_west", "north_east"],
+          "name": "shape",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [7, 7, 8, 8, 8, 8, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 7, 7, 7, 7]
+      }
+    },
+    {
+      "names": ["cobblestone_stairs", "brick_stairs", "stone_brick_stairs", "nether_brick_stairs", "sandstone_stairs", "quartz_stairs", "prismarine_stairs", "prismarine_brick_stairs", "dark_prismarine_stairs", "red_sandstone_stairs", "purpur_stairs", "polished_granite_stairs", "smooth_red_sandstone_stairs", "mossy_stone_brick_stairs", "polished_diorite_stairs", "mossy_cobblestone_stairs", "end_stone_brick_stairs", "stone_stairs", "smooth_sandstone_stairs", "smooth_quartz_stairs", "granite_stairs", "andesite_stairs", "red_nether_brick_stairs", "polished_andesite_stairs", "diorite_stairs", "blackstone_stairs", "polished_blackstone_brick_stairs", "polished_blackstone_stairs", "cobbled_deepslate_stairs", "polished_deepslate_stairs", "deepslate_tile_stairs", "deepslate_brick_stairs"],
+      "numStates": 80,
+      "defaultStateId": 44,
+      "material": "stone",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "Half",
+          "values": ["top", "bottom"],
+          "name": "half",
+          "type": "enum"
+        },
+        {
+          "enumType": "StairsShape",
+          "values": ["straight", "inner_left", "inner_right", "outer_left", "outer_right"],
+          "name": "shape",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 79, 78, 76, 77, 83, 82, 80, 81, 84, 85, 86, 87, 88, 89, 90, 91, 87, 86, 84, 85, 91, 90, 88, 89, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 79, 78, 76, 77, 83, 82, 80, 81, 84, 85, 86, 87, 88, 89, 90, 91, 87, 86, 84, 85, 91, 90, 88, 89]
+      }
+    },
+    {
+      "names": ["oak_wall_sign", "spruce_wall_sign", "birch_wall_sign", "acacia_wall_sign", "jungle_wall_sign", "dark_oak_wall_sign"],
+      "numStates": 8,
+      "defaultStateId": 4,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 0, 0, 0, 0],
+        "occlusionShapes": [188, 189, 190, 191, 188, 189, 190, 191]
+      }
+    },
+    {
+      "names": ["lever"],
+      "numStates": 24,
+      "defaultStateId": 13,
+      "material": "decoration",
+      "properties": [
+        {
+          "enumType": "AttachFace",
+          "values": ["floor", "wall", "ceiling"],
+          "name": "face",
+          "type": "enum"
+        },
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 34,
+        "light": 0,
+        "occlusionShapes": [192, 193, 194, 192, 195, 194, 196, 197, 198, 196, 199, 198, 192, 193, 194, 192, 195, 194, 196, 197, 198, 196, 199, 198]
+      }
+    },
+    {
+      "names": ["stone_pressure_plate", "polished_blackstone_pressure_plate"],
+      "numStates": 2,
+      "defaultStateId": 1,
+      "material": "stone",
+      "properties": [
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 34,
+        "light": 0,
+        "occlusionShapes": [200, 201]
+      }
+    },
+    {
+      "names": ["iron_door"],
+      "numStates": 64,
+      "defaultStateId": 52,
+      "material": "metal",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "DoubleBlockHalf",
+          "values": ["upper", "lower"],
+          "name": "half",
+          "type": "enum"
+        },
+        {
+          "enumType": "DoorHingeSide",
+          "values": ["left", "right"],
+          "name": "hinge",
+          "type": "enum"
+        },
+        {
+          "name": "open",
+          "type": "bool"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": [184, 185, 186, 187, 184, 185, 186, 187, 185, 184, 187, 186, 185, 184, 187, 186, 186, 187, 185, 184, 186, 187, 185, 184, 186, 187, 185, 184, 186, 187, 185, 184, 184, 185, 186, 187, 184, 185, 186, 187, 185, 184, 187, 186, 185, 184, 187, 186, 186, 187, 185, 184, 186, 187, 185, 184, 186, 187, 185, 184, 186, 187, 185, 184]
+      }
+    },
+    {
+      "names": ["oak_pressure_plate", "spruce_pressure_plate", "birch_pressure_plate", "jungle_pressure_plate", "acacia_pressure_plate", "dark_oak_pressure_plate"],
+      "numStates": 2,
+      "defaultStateId": 1,
+      "material": "wood",
+      "properties": [
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 34,
+        "light": 0,
+        "occlusionShapes": [200, 201]
+      }
+    },
+    {
+      "names": ["redstone_ore", "deepslate_redstone_ore"],
+      "numStates": 2,
+      "defaultStateId": 1,
+      "material": "stone",
+      "properties": [
+        {
+          "name": "lit",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [21, 5],
+        "light": [159, 15],
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["redstone_torch"],
+      "numStates": 2,
+      "defaultStateId": 0,
+      "material": "decoration",
+      "properties": [
+        {
+          "name": "lit",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 34,
+        "light": [112, 0],
+        "occlusionShapes": 31
+      }
+    },
+    {
+      "names": ["redstone_wall_torch"],
+      "numStates": 8,
+      "defaultStateId": 0,
+      "material": "decoration",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "lit",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 34,
+        "light": [112, 112, 112, 112, 0, 0, 0, 0],
+        "occlusionShapes": [32, 33, 34, 35, 32, 33, 34, 35]
+      }
+    },
+    {
+      "names": ["stone_button", "oak_button", "spruce_button", "birch_button", "jungle_button", "acacia_button", "dark_oak_button", "crimson_button", "warped_button", "polished_blackstone_button"],
+      "numStates": 24,
+      "defaultStateId": 13,
+      "material": "decoration",
+      "properties": [
+        {
+          "enumType": "AttachFace",
+          "values": ["floor", "wall", "ceiling"],
+          "name": "face",
+          "type": "enum"
+        },
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 34,
+        "light": 0,
+        "occlusionShapes": [202, 203, 204, 202, 205, 204, 206, 207, 208, 206, 209, 208, 210, 211, 212, 210, 213, 212, 214, 215, 216, 214, 217, 216]
+      }
+    },
+    {
+      "names": ["snow"],
+      "numStates": 8,
+      "defaultStateId": 0,
+      "material": "snow_layer",
+      "properties": [
+        {
+          "min": 1,
+          "max": 8,
+          "name": "layers",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": [27, 27, 27, 27, 27, 27, 27, 25],
+        "light": [0, 0, 0, 0, 0, 0, 0, 15],
+        "occlusionShapes": [7, 178, 179, 8, 180, 13, 181, 1]
+      }
+    },
+    {
+      "names": ["ice"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "ice",
+      "properties": [],
+      "states": {
+        "flags": 20,
+        "light": 1,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["snow_block"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "snow_block",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["cactus"],
+      "numStates": 16,
+      "defaultStateId": 0,
+      "material": "cactus",
+      "properties": [
+        {
+          "min": 0,
+          "max": 15,
+          "name": "age",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 19,
+        "light": 0,
+        "occlusionShapes": 218
+      }
+    },
+    {
+      "names": ["clay", "infested_stone", "infested_cobblestone", "infested_stone_bricks", "infested_mossy_stone_bricks", "infested_cracked_stone_bricks", "infested_chiseled_stone_bricks", "honeycomb_block"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "clay",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["sugar_cane"],
+      "numStates": 16,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [
+        {
+          "min": 0,
+          "max": 15,
+          "name": "age",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 18,
+        "light": 0,
+        "occlusionShapes": 16
+      }
+    },
+    {
+      "names": ["jukebox"],
+      "numStates": 2,
+      "defaultStateId": 1,
+      "material": "wood",
+      "properties": [
+        {
+          "name": "has_record",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["oak_fence", "spruce_fence", "birch_fence", "jungle_fence", "acacia_fence", "dark_oak_fence"],
+      "numStates": 32,
+      "defaultStateId": 31,
+      "material": "wood",
+      "properties": [
+        {
+          "name": "east",
+          "type": "bool"
+        },
+        {
+          "name": "north",
+          "type": "bool"
+        },
+        {
+          "name": "south",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        },
+        {
+          "name": "west",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [65, 65, 65, 65, 65, 65, 65, 65, 3, 3, 3, 3, 3, 3, 3, 3, 65, 65, 65, 65, 65, 65, 65, 65, 3, 3, 3, 3, 3, 3, 3, 3],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [219, 220, 221, 222, 223, 224, 225, 226, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 227, 228, 229, 230, 231, 232, 233, 234]
+      }
+    },
+    {
+      "names": ["pumpkin", "melon"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "vegetable",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["soul_sand"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "sand",
+      "properties": [],
+      "states": {
+        "flags": 1,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["basalt", "polished_basalt", "quartz_pillar", "purpur_pillar", "bone_block", "deepslate"],
+      "numStates": 3,
+      "defaultStateId": 1,
+      "material": "stone",
+      "properties": [
+        {
+          "enumType": "Axis",
+          "values": ["x", "y", "z"],
+          "name": "axis",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["soul_torch"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "decoration",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 160,
+        "occlusionShapes": 31
+      }
+    },
+    {
+      "names": ["soul_wall_torch"],
+      "numStates": 4,
+      "defaultStateId": 0,
+      "material": "decoration",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 160,
+        "occlusionShapes": [32, 33, 34, 35]
+      }
+    },
+    {
+      "names": ["glowstone", "sea_lantern"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "glass",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 255,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["nether_portal"],
+      "numStates": 2,
+      "defaultStateId": 0,
+      "material": "portal",
+      "properties": [
+        {
+          "enumType": "Axis",
+          "values": ["x", "z"],
+          "name": "axis",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 18,
+        "light": 176,
+        "occlusionShapes": [235, 236]
+      }
+    },
+    {
+      "names": ["carved_pumpkin"],
+      "numStates": 4,
+      "defaultStateId": 0,
+      "material": "vegetable",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["jack_o_lantern"],
+      "numStates": 4,
+      "defaultStateId": 0,
+      "material": "vegetable",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 255,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["cake"],
+      "numStates": 7,
+      "defaultStateId": 0,
+      "material": "cake",
+      "properties": [
+        {
+          "min": 0,
+          "max": 6,
+          "name": "bites",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 3,
+        "light": 0,
+        "occlusionShapes": [237, 238, 239, 240, 241, 242, 243]
+      }
+    },
+    {
+      "names": ["repeater"],
+      "numStates": 64,
+      "defaultStateId": 48,
+      "material": "decoration",
+      "properties": [
+        {
+          "min": 1,
+          "max": 4,
+          "name": "delay",
+          "type": "int"
+        },
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "locked",
+          "type": "bool"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 35,
+        "light": 0,
+        "occlusionShapes": 7
+      }
+    },
+    {
+      "names": ["oak_trapdoor", "spruce_trapdoor", "birch_trapdoor", "jungle_trapdoor", "acacia_trapdoor", "dark_oak_trapdoor"],
+      "numStates": 64,
+      "defaultStateId": 60,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "Half",
+          "values": ["top", "bottom"],
+          "name": "half",
+          "type": "enum"
+        },
+        {
+          "name": "open",
+          "type": "bool"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [186, 187, 185, 184, 186, 187, 185, 184, 244, 244, 244, 244, 245, 245, 245, 245, 186, 187, 185, 184, 186, 187, 185, 184, 244, 244, 244, 244, 245, 245, 245, 245, 186, 187, 185, 184, 186, 187, 185, 184, 244, 244, 244, 244, 245, 245, 245, 245, 186, 187, 185, 184, 186, 187, 185, 184, 244, 244, 244, 244, 245, 245, 245, 245]
+      }
+    },
+    {
+      "names": ["brown_mushroom_block", "red_mushroom_block", "mushroom_stem"],
+      "numStates": 64,
+      "defaultStateId": 0,
+      "material": "wood",
+      "properties": [
+        {
+          "name": "down",
+          "type": "bool"
+        },
+        {
+          "name": "east",
+          "type": "bool"
+        },
+        {
+          "name": "north",
+          "type": "bool"
+        },
+        {
+          "name": "south",
+          "type": "bool"
+        },
+        {
+          "name": "up",
+          "type": "bool"
+        },
+        {
+          "name": "west",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["iron_bars"],
+      "numStates": 32,
+      "defaultStateId": 31,
+      "material": "metal",
+      "properties": [
+        {
+          "name": "east",
+          "type": "bool"
+        },
+        {
+          "name": "north",
+          "type": "bool"
+        },
+        {
+          "name": "south",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        },
+        {
+          "name": "west",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2, 64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [246, 247, 248, 249, 250, 251, 252, 253, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 254, 255, 256, 257, 258, 259, 260, 261]
+      }
+    },
+    {
+      "names": ["chain"],
+      "numStates": 6,
+      "defaultStateId": 4,
+      "material": "metal",
+      "properties": [
+        {
+          "enumType": "Axis",
+          "values": ["x", "y", "z"],
+          "name": "axis",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 2, 2, 2],
+        "light": [1, 1, 1, 0, 0, 0],
+        "occlusionShapes": [262, 263, 264, 262, 263, 264]
+      }
+    },
+    {
+      "names": ["glass_pane", "white_stained_glass_pane", "orange_stained_glass_pane", "magenta_stained_glass_pane", "light_blue_stained_glass_pane", "yellow_stained_glass_pane", "lime_stained_glass_pane", "pink_stained_glass_pane", "gray_stained_glass_pane", "light_gray_stained_glass_pane", "cyan_stained_glass_pane", "purple_stained_glass_pane", "blue_stained_glass_pane", "brown_stained_glass_pane", "green_stained_glass_pane", "red_stained_glass_pane", "black_stained_glass_pane"],
+      "numStates": 32,
+      "defaultStateId": 31,
+      "material": "glass",
+      "properties": [
+        {
+          "name": "east",
+          "type": "bool"
+        },
+        {
+          "name": "north",
+          "type": "bool"
+        },
+        {
+          "name": "south",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        },
+        {
+          "name": "west",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2, 64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [246, 247, 248, 249, 250, 251, 252, 253, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 254, 255, 256, 257, 258, 259, 260, 261]
+      }
+    },
+    {
+      "names": ["attached_pumpkin_stem", "attached_melon_stem"],
+      "numStates": 4,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": [265, 266, 267, 268]
+      }
+    },
+    {
+      "names": ["pumpkin_stem", "melon_stem"],
+      "numStates": 8,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [
+        {
+          "min": 0,
+          "max": 7,
+          "name": "age",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 18,
+        "light": 0,
+        "occlusionShapes": [269, 270, 271, 272, 273, 274, 275, 261]
+      }
+    },
+    {
+      "names": ["vine"],
+      "numStates": 32,
+      "defaultStateId": 31,
+      "material": "replaceable_plant",
+      "properties": [
+        {
+          "name": "east",
+          "type": "bool"
+        },
+        {
+          "name": "north",
+          "type": "bool"
+        },
+        {
+          "name": "south",
+          "type": "bool"
+        },
+        {
+          "name": "up",
+          "type": "bool"
+        },
+        {
+          "name": "west",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 18,
+        "light": 0,
+        "occlusionShapes": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 1]
+      }
+    },
+    {
+      "names": ["glow_lichen"],
+      "numStates": 128,
+      "defaultStateId": 127,
+      "material": "replaceable_plant",
+      "properties": [
+        {
+          "name": "down",
+          "type": "bool"
+        },
+        {
+          "name": "east",
+          "type": "bool"
+        },
+        {
+          "name": "north",
+          "type": "bool"
+        },
+        {
+          "name": "south",
+          "type": "bool"
+        },
+        {
+          "name": "up",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        },
+        {
+          "name": "west",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "light": [113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 113, 1, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 0],
+        "occlusionShapes": [276, 36, 277, 37, 278, 38, 279, 39, 280, 40, 281, 41, 282, 42, 283, 43, 284, 44, 285, 45, 286, 46, 287, 47, 288, 48, 289, 49, 290, 50, 291, 51, 276, 36, 277, 37, 278, 38, 279, 39, 280, 40, 281, 41, 282, 42, 283, 43, 284, 44, 285, 45, 286, 46, 287, 47, 288, 48, 289, 49, 290, 50, 291, 51, 292, 52, 293, 53, 294, 54, 295, 55, 296, 56, 297, 57, 298, 58, 299, 59, 300, 60, 301, 61, 302, 62, 303, 63, 304, 64, 305, 65, 306, 66, 67, 1, 292, 52, 293, 53, 294, 54, 295, 55, 296, 56, 297, 57, 298, 58, 299, 59, 300, 60, 301, 61, 302, 62, 303, 63, 304, 64, 305, 65, 306, 66, 67, 1]
+      }
+    },
+    {
+      "names": ["oak_fence_gate", "spruce_fence_gate", "birch_fence_gate", "jungle_fence_gate", "acacia_fence_gate", "dark_oak_fence_gate"],
+      "numStates": 32,
+      "defaultStateId": 28,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "in_wall",
+          "type": "bool"
+        },
+        {
+          "name": "open",
+          "type": "bool"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 3,
+        "light": 0,
+        "occlusionShapes": [307, 307, 308, 308, 309, 309, 310, 310, 307, 307, 308, 308, 309, 309, 310, 310, 307, 307, 308, 308, 309, 309, 310, 310, 307, 307, 308, 308, 309, 309, 310, 310]
+      }
+    },
+    {
+      "names": ["lily_pad"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 311
+      }
+    },
+    {
+      "names": ["nether_brick_fence"],
+      "numStates": 32,
+      "defaultStateId": 31,
+      "material": "stone",
+      "properties": [
+        {
+          "name": "east",
+          "type": "bool"
+        },
+        {
+          "name": "north",
+          "type": "bool"
+        },
+        {
+          "name": "south",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        },
+        {
+          "name": "west",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [65, 65, 65, 65, 65, 65, 65, 65, 3, 3, 3, 3, 3, 3, 3, 3, 65, 65, 65, 65, 65, 65, 65, 65, 3, 3, 3, 3, 3, 3, 3, 3],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [219, 220, 221, 222, 223, 224, 225, 226, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 227, 228, 229, 230, 231, 232, 233, 234]
+      }
+    },
+    {
+      "names": ["nether_wart"],
+      "numStates": 4,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [
+        {
+          "min": 0,
+          "max": 3,
+          "name": "age",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": [18, 18, 18, 2],
+        "light": 0,
+        "occlusionShapes": [312, 8, 313, 181]
+      }
+    },
+    {
+      "names": ["enchanting_table"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "stone",
+      "properties": [],
+      "states": {
+        "flags": 11,
+        "light": 0,
+        "occlusionShapes": 13
+      }
+    },
+    {
+      "names": ["brewing_stand"],
+      "numStates": 8,
+      "defaultStateId": 7,
+      "material": "metal",
+      "properties": [
+        {
+          "name": "has_bottle_0",
+          "type": "bool"
+        },
+        {
+          "name": "has_bottle_1",
+          "type": "bool"
+        },
+        {
+          "name": "has_bottle_2",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 16,
+        "occlusionShapes": 314
+      }
+    },
+    {
+      "names": ["cauldron"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "metal",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 315
+      }
+    },
+    {
+      "names": ["water_cauldron", "powder_snow_cauldron"],
+      "numStates": 3,
+      "defaultStateId": 0,
+      "material": "metal",
+      "properties": [
+        {
+          "min": 1,
+          "max": 3,
+          "name": "level",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 315
+      }
+    },
+    {
+      "names": ["lava_cauldron"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "metal",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 240,
+        "occlusionShapes": 315
+      }
+    },
+    {
+      "names": ["end_portal"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "portal",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 240,
+        "occlusionShapes": 316
+      }
+    },
+    {
+      "names": ["end_portal_frame"],
+      "numStates": 8,
+      "defaultStateId": 1,
+      "material": "stone",
+      "properties": [
+        {
+          "name": "eye",
+          "type": "bool"
+        },
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 11,
+        "light": 16,
+        "occlusionShapes": [317, 318, 317, 318, 317, 318, 317, 318]
+      }
+    },
+    {
+      "names": ["dragon_egg"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "egg",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 16,
+        "occlusionShapes": 218
+      }
+    },
+    {
+      "names": ["redstone_lamp"],
+      "numStates": 2,
+      "defaultStateId": 1,
+      "material": "redstone_lamp",
+      "properties": [
+        {
+          "name": "lit",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": [255, 15],
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["cocoa"],
+      "numStates": 12,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [
+        {
+          "min": 0,
+          "max": 2,
+          "name": "age",
+          "type": "int"
+        },
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": [18, 18, 2, 18, 18, 2, 18, 18, 2, 18, 18, 2],
+        "light": 0,
+        "occlusionShapes": [319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330]
+      }
+    },
+    {
+      "names": ["ender_chest"],
+      "numStates": 8,
+      "defaultStateId": 4,
+      "material": "stone",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [65, 65, 65, 65, 3, 3, 3, 3],
+        "light": [113, 113, 113, 113, 112, 112, 112, 112],
+        "occlusionShapes": 92
+      }
+    },
+    {
+      "names": ["tripwire_hook"],
+      "numStates": 16,
+      "defaultStateId": 9,
+      "material": "decoration",
+      "properties": [
+        {
+          "name": "attached",
+          "type": "bool"
+        },
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 34,
+        "light": 0,
+        "occlusionShapes": [331, 331, 332, 332, 333, 333, 334, 334, 331, 331, 332, 332, 333, 333, 334, 334]
+      }
+    },
+    {
+      "names": ["tripwire"],
+      "numStates": 128,
+      "defaultStateId": 127,
+      "material": "decoration",
+      "properties": [
+        {
+          "name": "attached",
+          "type": "bool"
+        },
+        {
+          "name": "disarmed",
+          "type": "bool"
+        },
+        {
+          "name": "east",
+          "type": "bool"
+        },
+        {
+          "name": "north",
+          "type": "bool"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        },
+        {
+          "name": "south",
+          "type": "bool"
+        },
+        {
+          "name": "west",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": [335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8, 335, 8]
+      }
+    },
+    {
+      "names": ["command_block", "repeating_command_block", "chain_command_block"],
+      "numStates": 12,
+      "defaultStateId": 1,
+      "material": "metal",
+      "properties": [
+        {
+          "name": "conditional",
+          "type": "bool"
+        },
+        {
+          "enumType": "Direction",
+          "values": ["north", "east", "south", "west", "up", "down"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["beacon"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "glass",
+      "properties": [],
+      "states": {
+        "flags": 4,
+        "light": 241,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["cobblestone_wall", "mossy_cobblestone_wall", "brick_wall", "prismarine_wall", "red_sandstone_wall", "mossy_stone_brick_wall", "granite_wall", "stone_brick_wall", "nether_brick_wall", "andesite_wall", "red_nether_brick_wall", "sandstone_wall", "end_stone_brick_wall", "diorite_wall", "blackstone_wall", "polished_blackstone_brick_wall", "polished_blackstone_wall", "cobbled_deepslate_wall", "polished_deepslate_wall", "deepslate_tile_wall", "deepslate_brick_wall"],
+      "numStates": 324,
+      "defaultStateId": 54,
+      "material": "stone",
+      "properties": [
+        {
+          "enumType": "WallSide",
+          "values": ["none", "low", "tall"],
+          "name": "east",
+          "type": "enum"
+        },
+        {
+          "enumType": "WallSide",
+          "values": ["none", "low", "tall"],
+          "name": "north",
+          "type": "enum"
+        },
+        {
+          "enumType": "WallSide",
+          "values": ["none", "low", "tall"],
+          "name": "south",
+          "type": "enum"
+        },
+        {
+          "name": "up",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        },
+        {
+          "enumType": "WallSide",
+          "values": ["none", "low", "tall"],
+          "name": "west",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [183, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 0, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 183, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 0, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495]
+      }
+    },
+    {
+      "names": ["flower_pot", "potted_oak_sapling", "potted_spruce_sapling", "potted_birch_sapling", "potted_jungle_sapling", "potted_acacia_sapling", "potted_dark_oak_sapling", "potted_fern", "potted_dandelion", "potted_poppy", "potted_blue_orchid", "potted_allium", "potted_azure_bluet", "potted_red_tulip", "potted_orange_tulip", "potted_white_tulip", "potted_pink_tulip", "potted_oxeye_daisy", "potted_cornflower", "potted_lily_of_the_valley", "potted_wither_rose", "potted_red_mushroom", "potted_brown_mushroom", "potted_dead_bush", "potted_cactus", "potted_bamboo", "potted_crimson_fungus", "potted_warped_fungus", "potted_crimson_roots", "potted_warped_roots", "potted_azalea_bush", "potted_flowering_azalea_bush"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "decoration",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 30
+      }
+    },
+    {
+      "names": ["carrots", "potatoes"],
+      "numStates": 8,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [
+        {
+          "min": 0,
+          "max": 7,
+          "name": "age",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": [18, 18, 18, 18, 18, 18, 18, 2],
+        "light": 0,
+        "occlusionShapes": [7, 245, 178, 312, 179, 496, 8, 497]
+      }
+    },
+    {
+      "names": ["skeleton_skull", "wither_skeleton_skull", "zombie_head", "player_head", "creeper_head", "dragon_head"],
+      "numStates": 16,
+      "defaultStateId": 0,
+      "material": "decoration",
+      "properties": [
+        {
+          "min": 0,
+          "max": 15,
+          "name": "rotation",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 3,
+        "light": 0,
+        "occlusionShapes": 0
+      }
+    },
+    {
+      "names": ["skeleton_wall_skull", "wither_skeleton_wall_skull", "zombie_wall_head", "player_wall_head", "creeper_wall_head", "dragon_wall_head"],
+      "numStates": 4,
+      "defaultStateId": 0,
+      "material": "decoration",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 3,
+        "light": 0,
+        "occlusionShapes": [498, 499, 500, 501]
+      }
+    },
+    {
+      "names": ["anvil", "chipped_anvil", "damaged_anvil"],
+      "numStates": 4,
+      "defaultStateId": 0,
+      "material": "repair_station",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 3,
+        "light": 0,
+        "occlusionShapes": [502, 502, 503, 503]
+      }
+    },
+    {
+      "names": ["trapped_chest"],
+      "numStates": 24,
+      "defaultStateId": 12,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "ChestType",
+          "values": ["single", "left", "right"],
+          "name": "type",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [92, 92, 92, 92, 93, 94, 95, 96, 94, 93, 96, 95, 92, 92, 92, 92, 93, 94, 95, 96, 94, 93, 96, 95]
+      }
+    },
+    {
+      "names": ["light_weighted_pressure_plate", "heavy_weighted_pressure_plate"],
+      "numStates": 16,
+      "defaultStateId": 0,
+      "material": "metal",
+      "properties": [
+        {
+          "min": 0,
+          "max": 15,
+          "name": "power",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 34,
+        "light": 0,
+        "occlusionShapes": [201, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200]
+      }
+    },
+    {
+      "names": ["comparator"],
+      "numStates": 16,
+      "defaultStateId": 8,
+      "material": "decoration",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "ComparatorMode",
+          "values": ["compare", "subtract"],
+          "name": "mode",
+          "type": "enum"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 35,
+        "light": 0,
+        "occlusionShapes": 7
+      }
+    },
+    {
+      "names": ["daylight_detector"],
+      "numStates": 32,
+      "defaultStateId": 1,
+      "material": "wood",
+      "properties": [
+        {
+          "name": "inverted",
+          "type": "bool"
+        },
+        {
+          "min": 0,
+          "max": 15,
+          "name": "power",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 43,
+        "light": 0,
+        "occlusionShapes": 179
+      }
+    },
+    {
+      "names": ["redstone_block"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "metal",
+      "properties": [],
+      "states": {
+        "flags": 37,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["hopper"],
+      "numStates": 10,
+      "defaultStateId": 0,
+      "material": "metal",
+      "properties": [
+        {
+          "name": "enabled",
+          "type": "bool"
+        },
+        {
+          "enumType": "Direction",
+          "values": ["down", "north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": [504, 504, 505, 505, 506, 506, 507, 507, 508, 508]
+      }
+    },
+    {
+      "names": ["slime_block"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "clay",
+      "properties": [],
+      "states": {
+        "flags": 4,
+        "light": 1,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["barrier"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "barrier",
+      "properties": [],
+      "states": {
+        "flags": 6,
+        "light": 0,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["light"],
+      "numStates": 32,
+      "defaultStateId": 31,
+      "material": "air",
+      "properties": [
+        {
+          "min": 0,
+          "max": 15,
+          "name": "level",
+          "type": "int"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "light": [0, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 0, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240],
+        "occlusionShapes": 0
+      }
+    },
+    {
+      "names": ["iron_trapdoor"],
+      "numStates": 64,
+      "defaultStateId": 60,
+      "material": "metal",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "Half",
+          "values": ["top", "bottom"],
+          "name": "half",
+          "type": "enum"
+        },
+        {
+          "name": "open",
+          "type": "bool"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [186, 187, 185, 184, 186, 187, 185, 184, 244, 244, 244, 244, 245, 245, 245, 245, 186, 187, 185, 184, 186, 187, 185, 184, 244, 244, 244, 244, 245, 245, 245, 245, 186, 187, 185, 184, 186, 187, 185, 184, 244, 244, 244, 244, 245, 245, 245, 245, 186, 187, 185, 184, 186, 187, 185, 184, 244, 244, 244, 244, 245, 245, 245, 245]
+      }
+    },
+    {
+      "names": ["prismarine_slab", "prismarine_brick_slab", "dark_prismarine_slab", "stone_slab", "smooth_stone_slab", "sandstone_slab", "cut_sandstone_slab", "petrified_oak_slab", "cobblestone_slab", "brick_slab", "stone_brick_slab", "nether_brick_slab", "quartz_slab", "red_sandstone_slab", "cut_red_sandstone_slab", "purpur_slab", "polished_granite_slab", "smooth_red_sandstone_slab", "mossy_stone_brick_slab", "polished_diorite_slab", "mossy_cobblestone_slab", "end_stone_brick_slab", "smooth_sandstone_slab", "smooth_quartz_slab", "granite_slab", "andesite_slab", "red_nether_brick_slab", "polished_andesite_slab", "diorite_slab", "blackstone_slab", "polished_blackstone_brick_slab", "polished_blackstone_slab", "cobbled_deepslate_slab", "polished_deepslate_slab", "deepslate_tile_slab", "deepslate_brick_slab"],
+      "numStates": 6,
+      "defaultStateId": 4,
+      "material": "stone",
+      "properties": [
+        {
+          "enumType": "SlabType",
+          "values": ["top", "bottom", "double"],
+          "name": "type",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [73, 73, 69, 11, 11, 5],
+        "light": [1, 1, 15, 0, 0, 15],
+        "occlusionShapes": [509, 8, 1, 509, 8, 1]
+      }
+    },
+    {
+      "names": ["hay_block"],
+      "numStates": 3,
+      "defaultStateId": 1,
+      "material": "grass",
+      "properties": [
+        {
+          "enumType": "Axis",
+          "values": ["x", "y", "z"],
+          "name": "axis",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["white_carpet", "orange_carpet", "magenta_carpet", "light_blue_carpet", "yellow_carpet", "lime_carpet", "pink_carpet", "gray_carpet", "light_gray_carpet", "cyan_carpet", "purple_carpet", "blue_carpet", "brown_carpet", "green_carpet", "red_carpet", "black_carpet"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "carpet",
+      "properties": [],
+      "states": {
+        "flags": 3,
+        "light": 0,
+        "occlusionShapes": 67
+      }
+    },
+    {
+      "names": ["packed_ice", "blue_ice"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "dense_ice",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["sunflower", "lilac", "rose_bush", "peony", "tall_grass", "large_fern"],
+      "numStates": 2,
+      "defaultStateId": 1,
+      "material": "replaceable_plant",
+      "properties": [
+        {
+          "enumType": "DoubleBlockHalf",
+          "values": ["upper", "lower"],
+          "name": "half",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["white_banner", "orange_banner", "magenta_banner", "light_blue_banner", "yellow_banner", "lime_banner", "pink_banner", "gray_banner", "light_gray_banner", "cyan_banner", "purple_banner", "blue_banner", "brown_banner", "green_banner", "red_banner", "black_banner"],
+      "numStates": 16,
+      "defaultStateId": 0,
+      "material": "wood",
+      "properties": [
+        {
+          "min": 0,
+          "max": 15,
+          "name": "rotation",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 183
+      }
+    },
+    {
+      "names": ["white_wall_banner", "orange_wall_banner", "magenta_wall_banner", "light_blue_wall_banner", "yellow_wall_banner", "lime_wall_banner", "pink_wall_banner", "gray_wall_banner", "light_gray_wall_banner", "cyan_wall_banner", "purple_wall_banner", "blue_wall_banner", "brown_wall_banner", "green_wall_banner", "red_wall_banner", "black_wall_banner"],
+      "numStates": 4,
+      "defaultStateId": 0,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": [510, 511, 512, 513]
+      }
+    },
+    {
+      "names": ["oak_slab", "spruce_slab", "birch_slab", "jungle_slab", "acacia_slab", "dark_oak_slab"],
+      "numStates": 6,
+      "defaultStateId": 4,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "SlabType",
+          "values": ["top", "bottom", "double"],
+          "name": "type",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [73, 73, 69, 11, 11, 5],
+        "light": [1, 1, 15, 0, 0, 15],
+        "occlusionShapes": [509, 8, 1, 509, 8, 1]
+      }
+    },
+    {
+      "names": ["end_rod"],
+      "numStates": 6,
+      "defaultStateId": 4,
+      "material": "decoration",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "east", "south", "west", "up", "down"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 224,
+        "occlusionShapes": [514, 515, 514, 515, 234, 234]
+      }
+    },
+    {
+      "names": ["chorus_plant"],
+      "numStates": 64,
+      "defaultStateId": 63,
+      "material": "plant",
+      "properties": [
+        {
+          "name": "down",
+          "type": "bool"
+        },
+        {
+          "name": "east",
+          "type": "bool"
+        },
+        {
+          "name": "north",
+          "type": "bool"
+        },
+        {
+          "name": "south",
+          "type": "bool"
+        },
+        {
+          "name": "up",
+          "type": "bool"
+        },
+        {
+          "name": "west",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 0,
+        "light": 1,
+        "occlusionShapes": [516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579]
+      }
+    },
+    {
+      "names": ["chorus_flower"],
+      "numStates": 6,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [
+        {
+          "min": 0,
+          "max": 5,
+          "name": "age",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": [20, 20, 20, 20, 20, 4],
+        "light": 1,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["beetroots"],
+      "numStates": 4,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [
+        {
+          "min": 0,
+          "max": 3,
+          "name": "age",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": [18, 18, 18, 2],
+        "light": 0,
+        "occlusionShapes": [7, 178, 179, 8]
+      }
+    },
+    {
+      "names": ["dirt_path"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "dirt",
+      "properties": [],
+      "states": {
+        "flags": 11,
+        "light": 0,
+        "occlusionShapes": 182
+      }
+    },
+    {
+      "names": ["end_gateway"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "portal",
+      "properties": [],
+      "states": {
+        "flags": 0,
+        "light": 241,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["frosted_ice"],
+      "numStates": 4,
+      "defaultStateId": 0,
+      "material": "ice",
+      "properties": [
+        {
+          "min": 0,
+          "max": 3,
+          "name": "age",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 20,
+        "light": 1,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["magma_block"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "stone",
+      "properties": [],
+      "states": {
+        "flags": 21,
+        "light": 63,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["nether_wart_block", "dried_kelp_block", "warped_wart_block"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "grass",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["structure_void"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "structural_air",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 580
+      }
+    },
+    {
+      "names": ["observer"],
+      "numStates": 12,
+      "defaultStateId": 8,
+      "material": "stone",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "east", "south", "west", "up", "down"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 37,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["shulker_box", "white_shulker_box", "orange_shulker_box", "magenta_shulker_box", "light_blue_shulker_box", "yellow_shulker_box", "lime_shulker_box", "pink_shulker_box", "gray_shulker_box", "light_gray_shulker_box", "cyan_shulker_box", "purple_shulker_box", "blue_shulker_box", "brown_shulker_box", "green_shulker_box", "red_shulker_box", "black_shulker_box"],
+      "numStates": 6,
+      "defaultStateId": 4,
+      "material": "shulker_box",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "east", "south", "west", "up", "down"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 132,
+        "light": 1,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["white_glazed_terracotta", "orange_glazed_terracotta", "magenta_glazed_terracotta", "light_blue_glazed_terracotta", "yellow_glazed_terracotta", "lime_glazed_terracotta", "pink_glazed_terracotta", "gray_glazed_terracotta", "light_gray_glazed_terracotta", "cyan_glazed_terracotta", "purple_glazed_terracotta", "blue_glazed_terracotta", "brown_glazed_terracotta", "green_glazed_terracotta", "red_glazed_terracotta", "black_glazed_terracotta"],
+      "numStates": 4,
+      "defaultStateId": 0,
+      "material": "stone",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["kelp"],
+      "numStates": 26,
+      "defaultStateId": 0,
+      "material": "water_plant",
+      "properties": [
+        {
+          "min": 0,
+          "max": 25,
+          "name": "age",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": [80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 64],
+        "light": 1,
+        "occlusionShapes": 497
+      }
+    },
+    {
+      "names": ["kelp_plant"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "water_plant",
+      "properties": [],
+      "states": {
+        "flags": 64,
+        "light": 1,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["turtle_egg"],
+      "numStates": 12,
+      "defaultStateId": 0,
+      "material": "egg",
+      "properties": [
+        {
+          "min": 1,
+          "max": 4,
+          "name": "eggs",
+          "type": "int"
+        },
+        {
+          "min": 0,
+          "max": 2,
+          "name": "hatch",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 18,
+        "light": 0,
+        "occlusionShapes": [581, 582, 582, 582, 581, 582, 582, 582, 581, 582, 582, 582]
+      }
+    },
+    {
+      "names": ["dead_tube_coral", "dead_brain_coral", "dead_bubble_coral", "dead_fire_coral", "dead_horn_coral"],
+      "numStates": 2,
+      "defaultStateId": 0,
+      "material": "stone",
+      "properties": [
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 2],
+        "light": [1, 0],
+        "occlusionShapes": 583
+      }
+    },
+    {
+      "names": ["tube_coral", "brain_coral", "bubble_coral", "fire_coral", "horn_coral"],
+      "numStates": 2,
+      "defaultStateId": 0,
+      "material": "water_plant",
+      "properties": [
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 2],
+        "light": [1, 0],
+        "occlusionShapes": 583
+      }
+    },
+    {
+      "names": ["dead_tube_coral_fan", "dead_brain_coral_fan", "dead_bubble_coral_fan", "dead_fire_coral_fan", "dead_horn_coral_fan"],
+      "numStates": 2,
+      "defaultStateId": 0,
+      "material": "stone",
+      "properties": [
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 2],
+        "light": [1, 0],
+        "occlusionShapes": 584
+      }
+    },
+    {
+      "names": ["tube_coral_fan", "brain_coral_fan", "bubble_coral_fan", "fire_coral_fan", "horn_coral_fan"],
+      "numStates": 2,
+      "defaultStateId": 0,
+      "material": "water_plant",
+      "properties": [
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 2],
+        "light": [1, 0],
+        "occlusionShapes": 584
+      }
+    },
+    {
+      "names": ["dead_tube_coral_wall_fan", "dead_brain_coral_wall_fan", "dead_bubble_coral_wall_fan", "dead_fire_coral_wall_fan", "dead_horn_coral_wall_fan"],
+      "numStates": 8,
+      "defaultStateId": 0,
+      "material": "stone",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 0, 0, 0, 0],
+        "occlusionShapes": [585, 586, 587, 588, 585, 586, 587, 588]
+      }
+    },
+    {
+      "names": ["tube_coral_wall_fan", "brain_coral_wall_fan", "bubble_coral_wall_fan", "fire_coral_wall_fan", "horn_coral_wall_fan"],
+      "numStates": 8,
+      "defaultStateId": 0,
+      "material": "water_plant",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 0, 0, 0, 0],
+        "occlusionShapes": [585, 586, 587, 588, 585, 586, 587, 588]
+      }
+    },
+    {
+      "names": ["sea_pickle"],
+      "numStates": 8,
+      "defaultStateId": 0,
+      "material": "water_plant",
+      "properties": [
+        {
+          "min": 1,
+          "max": 4,
+          "name": "pickles",
+          "type": "int"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 2, 2, 2, 2],
+        "light": [97, 145, 193, 241, 0, 0, 0, 0],
+        "occlusionShapes": [589, 590, 591, 592, 589, 590, 591, 592]
+      }
+    },
+    {
+      "names": ["conduit"],
+      "numStates": 2,
+      "defaultStateId": 0,
+      "material": "glass",
+      "properties": [
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 2],
+        "light": [241, 240],
+        "occlusionShapes": 580
+      }
+    },
+    {
+      "names": ["bamboo_sapling"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "bamboo_sapling",
+      "properties": [],
+      "states": {
+        "flags": 18,
+        "light": 0,
+        "occlusionShapes": 593
+      }
+    },
+    {
+      "names": ["bamboo"],
+      "numStates": 12,
+      "defaultStateId": 0,
+      "material": "bamboo",
+      "properties": [
+        {
+          "min": 0,
+          "max": 1,
+          "name": "age",
+          "type": "int"
+        },
+        {
+          "enumType": "BambooLeaves",
+          "values": ["none", "small", "large"],
+          "name": "leaves",
+          "type": "enum"
+        },
+        {
+          "min": 0,
+          "max": 1,
+          "name": "stage",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": [146, 146, 146, 146, 146, 146, 130, 130, 130, 130, 130, 130],
+        "light": 0,
+        "occlusionShapes": [594, 594, 594, 594, 595, 595, 594, 594, 594, 594, 595, 595]
+      }
+    },
+    {
+      "names": ["bubble_column"],
+      "numStates": 2,
+      "defaultStateId": 0,
+      "material": "bubble_column",
+      "properties": [
+        {
+          "name": "drag",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 64,
+        "light": 1,
+        "occlusionShapes": 0
+      }
+    },
+    {
+      "names": ["scaffolding"],
+      "numStates": 32,
+      "defaultStateId": 31,
+      "material": "decoration",
+      "properties": [
+        {
+          "name": "bottom",
+          "type": "bool"
+        },
+        {
+          "min": 0,
+          "max": 7,
+          "name": "distance",
+          "type": "int"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 192, 130, 130, 130, 130, 130, 130, 130, 130, 130, 130, 130, 130, 130, 130, 130, 130],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [596, 597, 596, 597, 596, 597, 596, 597, 596, 597, 596, 597, 596, 597, 596, 597, 596, 597, 596, 597, 596, 597, 596, 597, 596, 597, 596, 597, 596, 597, 596, 597]
+      }
+    },
+    {
+      "names": ["loom"],
+      "numStates": 4,
+      "defaultStateId": 0,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["barrel"],
+      "numStates": 12,
+      "defaultStateId": 6,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "east", "south", "west", "up", "down"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "open",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["grindstone"],
+      "numStates": 12,
+      "defaultStateId": 1,
+      "material": "repair_station",
+      "properties": [
+        {
+          "enumType": "AttachFace",
+          "values": ["floor", "wall", "ceiling"],
+          "name": "face",
+          "type": "enum"
+        },
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 3,
+        "light": 0,
+        "occlusionShapes": [598, 599, 600, 598, 601, 600, 602, 603, 604, 602, 605, 604]
+      }
+    },
+    {
+      "names": ["lectern"],
+      "numStates": 16,
+      "defaultStateId": 12,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "has_book",
+          "type": "bool"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 43,
+        "light": 0,
+        "occlusionShapes": 606
+      }
+    },
+    {
+      "names": ["stonecutter"],
+      "numStates": 4,
+      "defaultStateId": 0,
+      "material": "stone",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 11,
+        "light": 0,
+        "occlusionShapes": 497
+      }
+    },
+    {
+      "names": ["bell"],
+      "numStates": 32,
+      "defaultStateId": 16,
+      "material": "metal",
+      "properties": [
+        {
+          "enumType": "BellAttachType",
+          "values": ["floor", "ceiling", "single_wall", "double_wall"],
+          "name": "attachment",
+          "type": "enum"
+        },
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 3,
+        "light": 0,
+        "occlusionShapes": [607, 608, 609, 610, 607, 608, 611, 610, 612, 608, 613, 614, 612, 608, 615, 614, 607, 608, 609, 610, 607, 608, 611, 610, 612, 608, 613, 614, 612, 608, 615, 614]
+      }
+    },
+    {
+      "names": ["lantern"],
+      "numStates": 4,
+      "defaultStateId": 3,
+      "material": "metal",
+      "properties": [
+        {
+          "name": "hanging",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 2, 2],
+        "light": [241, 241, 240, 240],
+        "occlusionShapes": [616, 617, 616, 617]
+      }
+    },
+    {
+      "names": ["soul_lantern"],
+      "numStates": 4,
+      "defaultStateId": 3,
+      "material": "metal",
+      "properties": [
+        {
+          "name": "hanging",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 2, 2],
+        "light": [161, 161, 160, 160],
+        "occlusionShapes": [616, 617, 616, 617]
+      }
+    },
+    {
+      "names": ["campfire"],
+      "numStates": 32,
+      "defaultStateId": 24,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "lit",
+          "type": "bool"
+        },
+        {
+          "name": "signal_fire",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "light": [241, 241, 241, 241, 1, 1, 1, 1, 241, 241, 241, 241, 1, 1, 1, 1, 240, 240, 240, 240, 0, 0, 0, 0, 240, 240, 240, 240, 0, 0, 0, 0],
+        "occlusionShapes": 496
+      }
+    },
+    {
+      "names": ["soul_campfire"],
+      "numStates": 32,
+      "defaultStateId": 24,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "lit",
+          "type": "bool"
+        },
+        {
+          "name": "signal_fire",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "light": [161, 161, 161, 161, 1, 1, 1, 1, 161, 161, 161, 161, 1, 1, 1, 1, 160, 160, 160, 160, 0, 0, 0, 0, 160, 160, 160, 160, 0, 0, 0, 0],
+        "occlusionShapes": 496
+      }
+    },
+    {
+      "names": ["sweet_berry_bush"],
+      "numStates": 4,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [
+        {
+          "min": 0,
+          "max": 3,
+          "name": "age",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": [18, 18, 18, 2],
+        "light": 0,
+        "occlusionShapes": [618, 218, 218, 1]
+      }
+    },
+    {
+      "names": ["warped_stem", "stripped_warped_stem", "warped_hyphae", "stripped_warped_hyphae", "crimson_stem", "stripped_crimson_stem", "crimson_hyphae", "stripped_crimson_hyphae"],
+      "numStates": 3,
+      "defaultStateId": 1,
+      "material": "nether_wood",
+      "properties": [
+        {
+          "enumType": "Axis",
+          "values": ["x", "y", "z"],
+          "name": "axis",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["warped_nylium", "crimson_nylium"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "stone",
+      "properties": [],
+      "states": {
+        "flags": 21,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["warped_fungus", "crimson_fungus"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 619
+      }
+    },
+    {
+      "names": ["warped_roots", "crimson_roots"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "replaceable_fireproof_plant",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 15
+      }
+    },
+    {
+      "names": ["nether_sprouts"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "replaceable_fireproof_plant",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 620
+      }
+    },
+    {
+      "names": ["shroomlight"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "grass",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 255,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["weeping_vines"],
+      "numStates": 26,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [
+        {
+          "min": 0,
+          "max": 25,
+          "name": "age",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": [18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 2],
+        "light": 0,
+        "occlusionShapes": 621
+      }
+    },
+    {
+      "names": ["weeping_vines_plant"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 218
+      }
+    },
+    {
+      "names": ["twisting_vines"],
+      "numStates": 26,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [
+        {
+          "min": 0,
+          "max": 25,
+          "name": "age",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": [18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 2],
+        "light": 0,
+        "occlusionShapes": 622
+      }
+    },
+    {
+      "names": ["twisting_vines_plant"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 183
+      }
+    },
+    {
+      "names": ["crimson_planks", "warped_planks"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "nether_wood",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["crimson_slab", "warped_slab"],
+      "numStates": 6,
+      "defaultStateId": 4,
+      "material": "nether_wood",
+      "properties": [
+        {
+          "enumType": "SlabType",
+          "values": ["top", "bottom", "double"],
+          "name": "type",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [73, 73, 69, 11, 11, 5],
+        "light": [1, 1, 15, 0, 0, 15],
+        "occlusionShapes": [509, 8, 1, 509, 8, 1]
+      }
+    },
+    {
+      "names": ["crimson_pressure_plate", "warped_pressure_plate"],
+      "numStates": 2,
+      "defaultStateId": 1,
+      "material": "nether_wood",
+      "properties": [
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 34,
+        "light": 0,
+        "occlusionShapes": [200, 201]
+      }
+    },
+    {
+      "names": ["crimson_fence", "warped_fence"],
+      "numStates": 32,
+      "defaultStateId": 31,
+      "material": "nether_wood",
+      "properties": [
+        {
+          "name": "east",
+          "type": "bool"
+        },
+        {
+          "name": "north",
+          "type": "bool"
+        },
+        {
+          "name": "south",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        },
+        {
+          "name": "west",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [65, 65, 65, 65, 65, 65, 65, 65, 3, 3, 3, 3, 3, 3, 3, 3, 65, 65, 65, 65, 65, 65, 65, 65, 3, 3, 3, 3, 3, 3, 3, 3],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [219, 220, 221, 222, 223, 224, 225, 226, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 227, 228, 229, 230, 231, 232, 233, 234]
+      }
+    },
+    {
+      "names": ["crimson_trapdoor", "warped_trapdoor"],
+      "numStates": 64,
+      "defaultStateId": 60,
+      "material": "nether_wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "Half",
+          "values": ["top", "bottom"],
+          "name": "half",
+          "type": "enum"
+        },
+        {
+          "name": "open",
+          "type": "bool"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [186, 187, 185, 184, 186, 187, 185, 184, 244, 244, 244, 244, 245, 245, 245, 245, 186, 187, 185, 184, 186, 187, 185, 184, 244, 244, 244, 244, 245, 245, 245, 245, 186, 187, 185, 184, 186, 187, 185, 184, 244, 244, 244, 244, 245, 245, 245, 245, 186, 187, 185, 184, 186, 187, 185, 184, 244, 244, 244, 244, 245, 245, 245, 245]
+      }
+    },
+    {
+      "names": ["crimson_fence_gate", "warped_fence_gate"],
+      "numStates": 32,
+      "defaultStateId": 28,
+      "material": "nether_wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "in_wall",
+          "type": "bool"
+        },
+        {
+          "name": "open",
+          "type": "bool"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 3,
+        "light": 0,
+        "occlusionShapes": [307, 307, 308, 308, 309, 309, 310, 310, 307, 307, 308, 308, 309, 309, 310, 310, 307, 307, 308, 308, 309, 309, 310, 310, 307, 307, 308, 308, 309, 309, 310, 310]
+      }
+    },
+    {
+      "names": ["crimson_stairs", "warped_stairs"],
+      "numStates": 80,
+      "defaultStateId": 44,
+      "material": "nether_wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "Half",
+          "values": ["top", "bottom"],
+          "name": "half",
+          "type": "enum"
+        },
+        {
+          "enumType": "StairsShape",
+          "values": ["straight", "inner_left", "inner_right", "outer_left", "outer_right"],
+          "name": "shape",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 79, 78, 76, 77, 83, 82, 80, 81, 84, 85, 86, 87, 88, 89, 90, 91, 87, 86, 84, 85, 91, 90, 88, 89, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 79, 78, 76, 77, 83, 82, 80, 81, 84, 85, 86, 87, 88, 89, 90, 91, 87, 86, 84, 85, 91, 90, 88, 89]
+      }
+    },
+    {
+      "names": ["crimson_door", "warped_door"],
+      "numStates": 64,
+      "defaultStateId": 52,
+      "material": "nether_wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "DoubleBlockHalf",
+          "values": ["upper", "lower"],
+          "name": "half",
+          "type": "enum"
+        },
+        {
+          "enumType": "DoorHingeSide",
+          "values": ["left", "right"],
+          "name": "hinge",
+          "type": "enum"
+        },
+        {
+          "name": "open",
+          "type": "bool"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": [184, 185, 186, 187, 184, 185, 186, 187, 185, 184, 187, 186, 185, 184, 187, 186, 186, 187, 185, 184, 186, 187, 185, 184, 186, 187, 185, 184, 186, 187, 185, 184, 184, 185, 186, 187, 184, 185, 186, 187, 185, 184, 187, 186, 185, 184, 187, 186, 186, 187, 185, 184, 186, 187, 185, 184, 186, 187, 185, 184, 186, 187, 185, 184]
+      }
+    },
+    {
+      "names": ["crimson_sign", "warped_sign"],
+      "numStates": 32,
+      "defaultStateId": 16,
+      "material": "nether_wood",
+      "properties": [
+        {
+          "min": 0,
+          "max": 15,
+          "name": "rotation",
+          "type": "int"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": 183
+      }
+    },
+    {
+      "names": ["crimson_wall_sign", "warped_wall_sign"],
+      "numStates": 8,
+      "defaultStateId": 4,
+      "material": "nether_wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 0, 0, 0, 0],
+        "occlusionShapes": [188, 189, 190, 191, 188, 189, 190, 191]
+      }
+    },
+    {
+      "names": ["structure_block"],
+      "numStates": 4,
+      "defaultStateId": 1,
+      "material": "metal",
+      "properties": [
+        {
+          "enumType": "StructureMode",
+          "values": ["save", "load", "corner", "data"],
+          "name": "mode",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["jigsaw"],
+      "numStates": 12,
+      "defaultStateId": 10,
+      "material": "metal",
+      "properties": [
+        {
+          "enumType": "FrontAndTop",
+          "values": ["down_east", "down_north", "down_south", "down_west", "up_east", "up_north", "up_south", "up_west", "west_up", "east_up", "north_up", "south_up"],
+          "name": "orientation",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["composter"],
+      "numStates": 9,
+      "defaultStateId": 0,
+      "material": "wood",
+      "properties": [
+        {
+          "min": 0,
+          "max": 8,
+          "name": "level",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 3,
+        "light": 0,
+        "occlusionShapes": [623, 624, 625, 626, 627, 628, 629, 630, 630]
+      }
+    },
+    {
+      "names": ["target"],
+      "numStates": 16,
+      "defaultStateId": 0,
+      "material": "grass",
+      "properties": [
+        {
+          "min": 0,
+          "max": 15,
+          "name": "power",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 37,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["bee_nest", "beehive"],
+      "numStates": 24,
+      "defaultStateId": 0,
+      "material": "wood",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "min": 0,
+          "max": 5,
+          "name": "honey_level",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["honey_block"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "clay",
+      "properties": [],
+      "states": {
+        "flags": 0,
+        "light": 1,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["crying_obsidian"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "stone",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 175,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["respawn_anchor"],
+      "numStates": 5,
+      "defaultStateId": 0,
+      "material": "stone",
+      "properties": [
+        {
+          "min": 0,
+          "max": 4,
+          "name": "charges",
+          "type": "int"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": [15, 63, 127, 191, 255],
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["lodestone"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "repair_station",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["candle", "white_candle", "orange_candle", "magenta_candle", "light_blue_candle", "yellow_candle", "lime_candle", "pink_candle", "gray_candle", "light_gray_candle", "cyan_candle", "purple_candle", "blue_candle", "brown_candle", "green_candle", "red_candle", "black_candle"],
+      "numStates": 16,
+      "defaultStateId": 12,
+      "material": "decoration",
+      "properties": [
+        {
+          "min": 1,
+          "max": 4,
+          "name": "candles",
+          "type": "int"
+        },
+        {
+          "name": "lit",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2],
+        "light": [49, 97, 145, 193, 1, 1, 1, 1, 48, 96, 144, 192, 0, 0, 0, 0],
+        "occlusionShapes": [271, 631, 632, 633, 271, 631, 632, 633, 271, 631, 632, 633, 271, 631, 632, 633]
+      }
+    },
+    {
+      "names": ["candle_cake", "white_candle_cake", "orange_candle_cake", "magenta_candle_cake", "light_blue_candle_cake", "yellow_candle_cake", "lime_candle_cake", "pink_candle_cake", "gray_candle_cake", "light_gray_candle_cake", "cyan_candle_cake", "purple_candle_cake", "blue_candle_cake", "brown_candle_cake", "green_candle_cake", "red_candle_cake", "black_candle_cake"],
+      "numStates": 2,
+      "defaultStateId": 1,
+      "material": "cake",
+      "properties": [
+        {
+          "name": "lit",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 3,
+        "light": [48, 0],
+        "occlusionShapes": 634
+      }
+    },
+    {
+      "names": ["amethyst_block"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "amethyst",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["budding_amethyst"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "amethyst",
+      "properties": [],
+      "states": {
+        "flags": 21,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["amethyst_cluster"],
+      "numStates": 12,
+      "defaultStateId": 10,
+      "material": "amethyst",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "east", "south", "west", "up", "down"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [80, 80, 80, 80, 80, 80, 18, 18, 18, 18, 18, 18],
+        "light": [81, 81, 81, 81, 81, 81, 80, 80, 80, 80, 80, 80],
+        "occlusionShapes": [635, 636, 637, 638, 639, 640, 635, 636, 637, 638, 639, 640]
+      }
+    },
+    {
+      "names": ["large_amethyst_bud"],
+      "numStates": 12,
+      "defaultStateId": 10,
+      "material": "amethyst",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "east", "south", "west", "up", "down"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [80, 80, 80, 80, 80, 80, 18, 18, 18, 18, 18, 18],
+        "light": [65, 65, 65, 65, 65, 65, 64, 64, 64, 64, 64, 64],
+        "occlusionShapes": [641, 642, 643, 644, 645, 646, 641, 642, 643, 644, 645, 646]
+      }
+    },
+    {
+      "names": ["medium_amethyst_bud"],
+      "numStates": 12,
+      "defaultStateId": 10,
+      "material": "amethyst",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "east", "south", "west", "up", "down"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [80, 80, 80, 80, 80, 80, 18, 18, 18, 18, 18, 18],
+        "light": [33, 33, 33, 33, 33, 33, 32, 32, 32, 32, 32, 32],
+        "occlusionShapes": [647, 648, 649, 650, 651, 652, 647, 648, 649, 650, 651, 652]
+      }
+    },
+    {
+      "names": ["small_amethyst_bud"],
+      "numStates": 12,
+      "defaultStateId": 10,
+      "material": "amethyst",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "east", "south", "west", "up", "down"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [80, 80, 80, 80, 80, 80, 18, 18, 18, 18, 18, 18],
+        "light": [17, 17, 17, 17, 17, 17, 16, 16, 16, 16, 16, 16],
+        "occlusionShapes": [653, 654, 655, 656, 657, 658, 653, 654, 655, 656, 657, 658]
+      }
+    },
+    {
+      "names": ["tinted_glass"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "glass",
+      "properties": [],
+      "states": {
+        "flags": 4,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["powder_snow"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "powder_snow",
+      "properties": [],
+      "states": {
+        "flags": 129,
+        "light": 1,
+        "occlusionShapes": 0
+      }
+    },
+    {
+      "names": ["sculk_sensor"],
+      "numStates": 96,
+      "defaultStateId": 48,
+      "material": "sculk",
+      "properties": [
+        {
+          "min": 0,
+          "max": 15,
+          "name": "power",
+          "type": "int"
+        },
+        {
+          "enumType": "SculkSensorPhase",
+          "values": ["inactive", "active", "cooldown"],
+          "name": "sculk_sensor_phase",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43],
+        "light": [17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16],
+        "occlusionShapes": 8
+      }
+    },
+    {
+      "names": ["weathered_copper", "exposed_copper", "copper_block", "weathered_cut_copper", "exposed_cut_copper", "cut_copper"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "metal",
+      "properties": [],
+      "states": {
+        "flags": 21,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["oxidized_cut_copper_stairs", "waxed_oxidized_cut_copper_stairs", "waxed_weathered_cut_copper_stairs", "waxed_exposed_cut_copper_stairs", "waxed_cut_copper_stairs"],
+      "numStates": 80,
+      "defaultStateId": 44,
+      "material": "metal",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "Half",
+          "values": ["top", "bottom"],
+          "name": "half",
+          "type": "enum"
+        },
+        {
+          "enumType": "StairsShape",
+          "values": ["straight", "inner_left", "inner_right", "outer_left", "outer_right"],
+          "name": "shape",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 79, 78, 76, 77, 83, 82, 80, 81, 84, 85, 86, 87, 88, 89, 90, 91, 87, 86, 84, 85, 91, 90, 88, 89, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 79, 78, 76, 77, 83, 82, 80, 81, 84, 85, 86, 87, 88, 89, 90, 91, 87, 86, 84, 85, 91, 90, 88, 89]
+      }
+    },
+    {
+      "names": ["weathered_cut_copper_stairs", "exposed_cut_copper_stairs", "cut_copper_stairs"],
+      "numStates": 80,
+      "defaultStateId": 44,
+      "material": "metal",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "Half",
+          "values": ["top", "bottom"],
+          "name": "half",
+          "type": "enum"
+        },
+        {
+          "enumType": "StairsShape",
+          "values": ["straight", "inner_left", "inner_right", "outer_left", "outer_right"],
+          "name": "shape",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 79, 78, 76, 77, 83, 82, 80, 81, 84, 85, 86, 87, 88, 89, 90, 91, 87, 86, 84, 85, 91, 90, 88, 89, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 79, 78, 76, 77, 83, 82, 80, 81, 84, 85, 86, 87, 88, 89, 90, 91, 87, 86, 84, 85, 91, 90, 88, 89]
+      }
+    },
+    {
+      "names": ["oxidized_cut_copper_slab", "waxed_oxidized_cut_copper_slab", "waxed_weathered_cut_copper_slab", "waxed_exposed_cut_copper_slab", "waxed_cut_copper_slab"],
+      "numStates": 6,
+      "defaultStateId": 4,
+      "material": "metal",
+      "properties": [
+        {
+          "enumType": "SlabType",
+          "values": ["top", "bottom", "double"],
+          "name": "type",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [73, 73, 69, 11, 11, 5],
+        "light": [1, 1, 15, 0, 0, 15],
+        "occlusionShapes": [509, 8, 1, 509, 8, 1]
+      }
+    },
+    {
+      "names": ["weathered_cut_copper_slab", "exposed_cut_copper_slab", "cut_copper_slab"],
+      "numStates": 6,
+      "defaultStateId": 4,
+      "material": "metal",
+      "properties": [
+        {
+          "enumType": "SlabType",
+          "values": ["top", "bottom", "double"],
+          "name": "type",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [89, 89, 85, 27, 27, 21],
+        "light": [1, 1, 15, 0, 0, 15],
+        "occlusionShapes": [509, 8, 1, 509, 8, 1]
+      }
+    },
+    {
+      "names": ["lightning_rod"],
+      "numStates": 24,
+      "defaultStateId": 22,
+      "material": "metal",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "east", "south", "west", "up", "down"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "powered",
+          "type": "bool"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [514, 515, 514, 515, 234, 234, 514, 515, 514, 515, 234, 234, 514, 515, 514, 515, 234, 234, 514, 515, 514, 515, 234, 234]
+      }
+    },
+    {
+      "names": ["pointed_dripstone"],
+      "numStates": 20,
+      "defaultStateId": 11,
+      "material": "stone",
+      "properties": [
+        {
+          "enumType": "DripstoneThickness",
+          "values": ["tip_merge", "tip", "frustum", "middle", "base"],
+          "name": "thickness",
+          "type": "enum"
+        },
+        {
+          "enumType": "Direction",
+          "values": ["up", "down"],
+          "name": "vertical_direction",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [208, 208, 208, 208, 208, 208, 208, 208, 208, 208, 146, 146, 146, 146, 146, 146, 146, 146, 146, 146],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": 0
+      }
+    },
+    {
+      "names": ["cave_vines"],
+      "numStates": 52,
+      "defaultStateId": 26,
+      "material": "plant",
+      "properties": [
+        {
+          "min": 0,
+          "max": 25,
+          "name": "age",
+          "type": "int"
+        },
+        {
+          "name": "berries",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 2, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 2],
+        "light": [224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 224, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": 218
+      }
+    },
+    {
+      "names": ["cave_vines_plant"],
+      "numStates": 2,
+      "defaultStateId": 1,
+      "material": "plant",
+      "properties": [
+        {
+          "name": "berries",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": 2,
+        "light": [224, 0],
+        "occlusionShapes": 218
+      }
+    },
+    {
+      "names": ["spore_blossom"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 659
+      }
+    },
+    {
+      "names": ["azalea", "flowering_azalea"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [],
+      "states": {
+        "flags": 2,
+        "light": 0,
+        "occlusionShapes": 660
+      }
+    },
+    {
+      "names": ["moss_carpet"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "plant",
+      "properties": [],
+      "states": {
+        "flags": 3,
+        "light": 0,
+        "occlusionShapes": 67
+      }
+    },
+    {
+      "names": ["moss_block"],
+      "numStates": 1,
+      "defaultStateId": 0,
+      "material": "moss",
+      "properties": [],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    },
+    {
+      "names": ["big_dripleaf"],
+      "numStates": 32,
+      "defaultStateId": 16,
+      "material": "plant",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "Tilt",
+          "values": ["none", "unstable", "partial", "full"],
+          "name": "tilt",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": [661, 662, 663, 664, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 661, 662, 663, 664, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672]
+      }
+    },
+    {
+      "names": ["big_dripleaf_stem"],
+      "numStates": 8,
+      "defaultStateId": 4,
+      "material": "plant",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 0, 0, 0, 0],
+        "occlusionShapes": [673, 674, 675, 676, 673, 674, 675, 676]
+      }
+    },
+    {
+      "names": ["small_dripleaf"],
+      "numStates": 16,
+      "defaultStateId": 12,
+      "material": "plant",
+      "properties": [
+        {
+          "enumType": "Direction",
+          "values": ["north", "south", "west", "east"],
+          "name": "facing",
+          "type": "enum"
+        },
+        {
+          "enumType": "DoubleBlockHalf",
+          "values": ["upper", "lower"],
+          "name": "half",
+          "type": "enum"
+        },
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 64, 64, 64, 64, 64, 64, 64, 2, 2, 2, 2, 2, 2, 2, 2],
+        "light": [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+        "occlusionShapes": 15
+      }
+    },
+    {
+      "names": ["hanging_roots"],
+      "numStates": 2,
+      "defaultStateId": 1,
+      "material": "replaceable_plant",
+      "properties": [
+        {
+          "name": "waterlogged",
+          "type": "bool"
+        }
+      ],
+      "states": {
+        "flags": [64, 2],
+        "light": [1, 0],
+        "occlusionShapes": 621
+      }
+    },
+    {
+      "names": ["infested_deepslate"],
+      "numStates": 3,
+      "defaultStateId": 1,
+      "material": "clay",
+      "properties": [
+        {
+          "enumType": "Axis",
+          "values": ["x", "y", "z"],
+          "name": "axis",
+          "type": "enum"
+        }
+      ],
+      "states": {
+        "flags": 5,
+        "light": 15,
+        "occlusionShapes": 1
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "air",
+      "attribs": 16,
+      "mapColor": 0
+    },
+    {
+      "name": "structural_air",
+      "attribs": 16,
+      "mapColor": 0
+    },
+    {
+      "name": "portal",
+      "attribs": 0,
+      "mapColor": 0
+    },
+    {
+      "name": "carpet",
+      "attribs": 2,
+      "mapColor": 3
+    },
+    {
+      "name": "plant",
+      "attribs": 0,
+      "mapColor": 7
+    },
+    {
+      "name": "water_plant",
+      "attribs": 0,
+      "mapColor": 12
+    },
+    {
+      "name": "replaceable_plant",
+      "attribs": 18,
+      "mapColor": 7
+    },
+    {
+      "name": "replaceable_fireproof_plant",
+      "attribs": 16,
+      "mapColor": 7
+    },
+    {
+      "name": "replaceable_water_plant",
+      "attribs": 16,
+      "mapColor": 12
+    },
+    {
+      "name": "water",
+      "attribs": 20,
+      "mapColor": 12
+    },
+    {
+      "name": "bubble_column",
+      "attribs": 20,
+      "mapColor": 12
+    },
+    {
+      "name": "lava",
+      "attribs": 20,
+      "mapColor": 4
+    },
+    {
+      "name": "snow_layer",
+      "attribs": 16,
+      "mapColor": 8
+    },
+    {
+      "name": "fire",
+      "attribs": 16,
+      "mapColor": 0
+    },
+    {
+      "name": "decoration",
+      "attribs": 0,
+      "mapColor": 0
+    },
+    {
+      "name": "cobweb",
+      "attribs": 32,
+      "mapColor": 3
+    },
+    {
+      "name": "redstone_lamp",
+      "attribs": 41,
+      "mapColor": 0
+    },
+    {
+      "name": "clay",
+      "attribs": 41,
+      "mapColor": 9
+    },
+    {
+      "name": "dirt",
+      "attribs": 41,
+      "mapColor": 10
+    },
+    {
+      "name": "grass",
+      "attribs": 41,
+      "mapColor": 1
+    },
+    {
+      "name": "dense_ice",
+      "attribs": 41,
+      "mapColor": 5
+    },
+    {
+      "name": "sand",
+      "attribs": 41,
+      "mapColor": 2
+    },
+    {
+      "name": "sponge",
+      "attribs": 41,
+      "mapColor": 18
+    },
+    {
+      "name": "shulker_box",
+      "attribs": 41,
+      "mapColor": 24
+    },
+    {
+      "name": "wood",
+      "attribs": 43,
+      "mapColor": 13
+    },
+    {
+      "name": "nether_wood",
+      "attribs": 41,
+      "mapColor": 13
+    },
+    {
+      "name": "bamboo_sapling",
+      "attribs": 42,
+      "mapColor": 13
+    },
+    {
+      "name": "bamboo",
+      "attribs": 43,
+      "mapColor": 13
+    },
+    {
+      "name": "wool",
+      "attribs": 43,
+      "mapColor": 3
+    },
+    {
+      "name": "tnt",
+      "attribs": 35,
+      "mapColor": 4
+    },
+    {
+      "name": "leaves",
+      "attribs": 35,
+      "mapColor": 7
+    },
+    {
+      "name": "glass",
+      "attribs": 33,
+      "mapColor": 0
+    },
+    {
+      "name": "ice",
+      "attribs": 33,
+      "mapColor": 5
+    },
+    {
+      "name": "cactus",
+      "attribs": 33,
+      "mapColor": 7
+    },
+    {
+      "name": "stone",
+      "attribs": 41,
+      "mapColor": 11
+    },
+    {
+      "name": "metal",
+      "attribs": 41,
+      "mapColor": 6
+    },
+    {
+      "name": "snow_block",
+      "attribs": 41,
+      "mapColor": 8
+    },
+    {
+      "name": "repair_station",
+      "attribs": 41,
+      "mapColor": 6
+    },
+    {
+      "name": "barrier",
+      "attribs": 41,
+      "mapColor": 0
+    },
+    {
+      "name": "piston",
+      "attribs": 41,
+      "mapColor": 11
+    },
+    {
+      "name": "moss",
+      "attribs": 41,
+      "mapColor": 7
+    },
+    {
+      "name": "vegetable",
+      "attribs": 41,
+      "mapColor": 7
+    },
+    {
+      "name": "egg",
+      "attribs": 41,
+      "mapColor": 7
+    },
+    {
+      "name": "cake",
+      "attribs": 41,
+      "mapColor": 0
+    },
+    {
+      "name": "amethyst",
+      "attribs": 41,
+      "mapColor": 24
+    },
+    {
+      "name": "powder_snow",
+      "attribs": 8,
+      "mapColor": 8
+    },
+    {
+      "name": "sculk",
+      "attribs": 41,
+      "mapColor": 29
+    }
+  ],
+  "shapes": [
+    [],
+    [0, 0, 0, 16, 16, 16],
+    [2, 0, 2, 14, 12, 14],
+    [0, 0, 0, 3, 9, 3, 0, 3, 3, 16, 9, 16, 3, 3, 0, 16, 9, 3, 13, 0, 0, 16, 3, 3],
+    [0, 0, 13, 3, 9, 16, 0, 3, 0, 16, 9, 13, 3, 3, 13, 16, 9, 16, 13, 0, 13, 16, 3, 16],
+    [0, 0, 0, 3, 9, 3, 0, 0, 13, 3, 9, 16, 0, 3, 3, 16, 9, 13, 3, 3, 0, 16, 9, 3, 3, 3, 13, 16, 9, 16],
+    [0, 3, 0, 16, 9, 16, 13, 0, 0, 16, 3, 3, 13, 0, 13, 16, 3, 16],
+    [0, 0, 0, 16, 2, 16],
+    [0, 0, 0, 16, 8, 16],
+    [0, 0, 4, 16, 16, 16],
+    [0, 0, 0, 12, 16, 16],
+    [0, 0, 0, 16, 16, 12],
+    [4, 0, 0, 16, 16, 16],
+    [0, 0, 0, 16, 12, 16],
+    [0, 4, 0, 16, 16, 16],
+    [2, 0, 2, 14, 13, 14],
+    [2, 0, 2, 14, 16, 14],
+    [0, 0, 0, 16, 16, 4, 6, 6, 4, 10, 10, 16],
+    [0, 6, 6, 16, 10, 10, 12, 0, 0, 16, 6, 16, 12, 6, 0, 16, 16, 6, 12, 6, 10, 16, 16, 16, 12, 10, 6, 16, 16, 10],
+    [0, 0, 12, 16, 16, 16, 6, 6, 0, 10, 10, 12],
+    [0, 0, 0, 4, 16, 16, 4, 6, 6, 16, 10, 10],
+    [0, 12, 0, 16, 16, 16, 6, 0, 6, 10, 12, 10],
+    [0, 0, 0, 16, 4, 16, 6, 4, 6, 10, 16, 10],
+    [0, 0, 0, 16, 16, 4, 6, 6, 4, 10, 10, 20],
+    [-4, 6, 6, 16, 10, 10, 12, 0, 0, 16, 6, 16, 12, 6, 0, 16, 16, 6, 12, 6, 10, 16, 16, 16, 12, 10, 6, 16, 16, 10],
+    [0, 0, 12, 16, 16, 16, 6, 6, -4, 10, 10, 12],
+    [0, 0, 0, 4, 16, 16, 4, 6, 6, 20, 10, 10],
+    [0, 12, 0, 16, 16, 16, 6, -4, 6, 10, 12, 10],
+    [0, 0, 0, 16, 4, 16, 6, 4, 6, 10, 20, 10],
+    [1, 0, 1, 7, 10, 7],
+    [5, 0, 5, 11, 6, 11],
+    [6, 0, 6, 10, 10, 10],
+    [6, 3, 11, 11, 13, 16],
+    [6, 3, 0, 11, 13, 5],
+    [11, 3, 6, 16, 13, 11],
+    [0, 3, 6, 5, 13, 11],
+    [0, 0, 0, 1, 16, 16, 1, 0, 0, 16, 16, 1, 1, 0, 15, 16, 16, 16, 1, 15, 1, 16, 16, 15, 15, 0, 1, 16, 15, 15],
+    [0, 0, 0, 1, 16, 16, 1, 0, 0, 16, 16, 1, 1, 0, 15, 16, 16, 16, 1, 15, 1, 16, 16, 15],
+    [0, 0, 0, 1, 16, 16, 1, 0, 15, 16, 16, 16, 1, 15, 0, 16, 16, 15, 15, 0, 0, 16, 15, 15],
+    [0, 0, 0, 1, 16, 16, 1, 0, 15, 16, 16, 16, 1, 15, 0, 16, 16, 15],
+    [0, 0, 0, 1, 16, 16, 1, 0, 0, 16, 16, 1, 1, 15, 1, 16, 16, 16, 15, 0, 1, 16, 15, 16],
+    [0, 0, 0, 1, 16, 16, 1, 0, 0, 16, 16, 1, 1, 15, 1, 16, 16, 16],
+    [0, 0, 0, 1, 16, 16, 1, 15, 0, 16, 16, 16, 15, 0, 0, 16, 15, 16],
+    [0, 0, 0, 1, 16, 16, 1, 15, 0, 16, 16, 16],
+    [0, 0, 0, 1, 16, 16, 1, 0, 0, 16, 16, 1, 1, 0, 15, 16, 16, 16, 15, 0, 1, 16, 16, 15],
+    [0, 0, 0, 1, 16, 16, 1, 0, 0, 16, 16, 1, 1, 0, 15, 16, 16, 16],
+    [0, 0, 0, 1, 16, 16, 1, 0, 15, 16, 16, 16, 15, 0, 0, 16, 16, 15],
+    [0, 0, 0, 1, 16, 16, 1, 0, 15, 16, 16, 16],
+    [0, 0, 0, 1, 16, 16, 1, 0, 0, 16, 16, 1, 15, 0, 1, 16, 16, 16],
+    [0, 0, 0, 1, 16, 16, 1, 0, 0, 16, 16, 1],
+    [0, 0, 0, 1, 16, 16, 15, 0, 0, 16, 16, 16],
+    [0, 0, 0, 1, 16, 16],
+    [0, 0, 0, 16, 16, 1, 0, 0, 15, 16, 16, 16, 0, 15, 1, 16, 16, 15, 15, 0, 1, 16, 15, 15],
+    [0, 0, 0, 16, 16, 1, 0, 0, 15, 16, 16, 16, 0, 15, 1, 16, 16, 15],
+    [0, 0, 15, 16, 16, 16, 0, 15, 0, 16, 16, 15, 15, 0, 0, 16, 15, 15],
+    [0, 0, 15, 16, 16, 16, 0, 15, 0, 16, 16, 15],
+    [0, 0, 0, 16, 16, 1, 0, 15, 1, 16, 16, 16, 15, 0, 1, 16, 15, 16],
+    [0, 0, 0, 16, 16, 1, 0, 15, 1, 16, 16, 16],
+    [0, 15, 0, 16, 16, 16, 15, 0, 0, 16, 15, 16],
+    [0, 15, 0, 16, 16, 16],
+    [0, 0, 0, 16, 16, 1, 0, 0, 15, 16, 16, 16, 15, 0, 1, 16, 16, 15],
+    [0, 0, 0, 16, 16, 1, 0, 0, 15, 16, 16, 16],
+    [0, 0, 15, 16, 16, 16, 15, 0, 0, 16, 16, 15],
+    [0, 0, 15, 16, 16, 16],
+    [0, 0, 0, 16, 16, 1, 15, 0, 1, 16, 16, 16],
+    [0, 0, 0, 16, 16, 1],
+    [15, 0, 0, 16, 16, 16],
+    [0, 0, 0, 16, 1, 16],
+    [0, 0, 0, 16, 16, 8, 0, 8, 8, 16, 16, 16],
+    [0, 0, 8, 16, 16, 16, 0, 8, 0, 16, 16, 8],
+    [0, 0, 0, 8, 16, 16, 8, 8, 0, 16, 16, 16],
+    [0, 8, 0, 16, 16, 16, 8, 0, 0, 16, 8, 16],
+    [0, 0, 0, 16, 8, 16, 0, 8, 0, 16, 16, 8],
+    [0, 0, 0, 16, 8, 16, 0, 8, 8, 16, 16, 16],
+    [0, 0, 0, 16, 8, 16, 0, 8, 0, 8, 16, 16],
+    [0, 0, 0, 16, 8, 16, 8, 8, 0, 16, 16, 16],
+    [0, 0, 0, 8, 16, 16, 8, 0, 0, 16, 16, 8, 8, 8, 8, 16, 16, 16],
+    [0, 0, 8, 16, 16, 16, 0, 8, 0, 16, 16, 8, 8, 0, 0, 16, 8, 8],
+    [0, 0, 0, 8, 16, 16, 8, 0, 8, 16, 16, 16, 8, 8, 0, 16, 16, 8],
+    [0, 0, 0, 16, 16, 8, 0, 8, 8, 16, 16, 16, 8, 0, 8, 16, 8, 16],
+    [0, 0, 0, 16, 8, 16, 0, 8, 0, 8, 16, 16, 8, 8, 0, 16, 16, 8],
+    [0, 0, 0, 16, 8, 16, 0, 8, 8, 16, 16, 16, 8, 8, 0, 16, 16, 8],
+    [0, 0, 0, 16, 8, 16, 0, 8, 0, 8, 16, 16, 8, 8, 8, 16, 16, 16],
+    [0, 0, 0, 16, 8, 16, 0, 8, 0, 16, 16, 8, 8, 8, 8, 16, 16, 16],
+    [0, 0, 0, 8, 16, 8, 0, 8, 8, 16, 16, 16, 8, 8, 0, 16, 16, 8],
+    [0, 8, 0, 16, 16, 16, 8, 0, 8, 16, 8, 16],
+    [0, 0, 8, 8, 16, 16, 0, 8, 0, 16, 16, 8, 8, 8, 8, 16, 16, 16],
+    [0, 8, 0, 16, 16, 16, 8, 0, 0, 16, 8, 8],
+    [0, 0, 0, 16, 8, 16, 0, 8, 0, 8, 16, 8],
+    [0, 0, 0, 16, 8, 16, 8, 8, 8, 16, 16, 16],
+    [0, 0, 0, 16, 8, 16, 0, 8, 8, 8, 16, 16],
+    [0, 0, 0, 16, 8, 16, 8, 8, 0, 16, 16, 8],
+    [1, 0, 1, 15, 14, 15],
+    [1, 0, 1, 16, 14, 15],
+    [0, 0, 1, 15, 14, 15],
+    [1, 0, 0, 15, 14, 15],
+    [1, 0, 1, 15, 14, 16],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 0, 13, 16, 1, 3, 1, 15, 13, 16, 16, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 0, 13, 16, 1, 3, 1, 15, 13, 16, 16],
+    [0, 0, 3, 13, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 0, 13, 16, 1, 3, 1, 15, 13, 16, 16],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 15, 13, 16, 16, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 15, 13, 16, 16],
+    [0, 0, 3, 13, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 15, 13, 16, 16],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 13, 13, 1, 16, 3, 1, 15, 13, 16, 16, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 13, 13, 1, 16, 3, 1, 15, 13, 16, 16],
+    [0, 0, 3, 13, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 13, 13, 1, 16, 3, 1, 15, 13, 16, 16],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 0, 13, 16, 1, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 0, 13, 16, 1],
+    [0, 0, 3, 13, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 0, 13, 16, 1],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16],
+    [0, 0, 3, 13, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 13, 13, 1, 16, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 13, 13, 1, 16],
+    [0, 0, 3, 13, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 13, 13, 1, 16],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 3, 1, 0, 13, 16, 1, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 3, 1, 0, 13, 16, 1],
+    [0, 0, 3, 13, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 3, 1, 0, 13, 16, 1],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3],
+    [0, 0, 3, 13, 1, 13, 0, 1, 3, 1, 16, 13, 3, 0, 0, 13, 1, 3],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 0, 1, 3, 1, 16, 13],
+    [0, 0, 3, 13, 1, 13, 0, 1, 3, 1, 16, 13],
+    [0, 0, 3, 16, 1, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 0, 13, 16, 1, 3, 1, 15, 13, 16, 16, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 0, 13, 16, 1, 3, 1, 15, 13, 16, 16],
+    [0, 0, 3, 13, 1, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 0, 13, 16, 1, 3, 1, 15, 13, 16, 16],
+    [0, 0, 3, 16, 1, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 15, 13, 16, 16, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 15, 13, 16, 16],
+    [0, 0, 3, 13, 1, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 15, 13, 16, 16],
+    [0, 0, 3, 16, 1, 13, 3, 0, 13, 13, 1, 16, 3, 1, 15, 13, 16, 16, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 3, 0, 13, 13, 1, 16, 3, 1, 15, 13, 16, 16],
+    [0, 0, 3, 13, 1, 13, 3, 0, 13, 13, 1, 16, 3, 1, 15, 13, 16, 16],
+    [0, 0, 3, 16, 1, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 0, 13, 16, 1, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 0, 13, 16, 1],
+    [0, 0, 3, 13, 1, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 3, 1, 0, 13, 16, 1],
+    [0, 0, 3, 16, 1, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16],
+    [0, 0, 3, 13, 1, 13, 3, 0, 0, 13, 1, 3, 3, 0, 13, 13, 1, 16],
+    [0, 0, 3, 16, 1, 13, 3, 0, 13, 13, 1, 16, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 3, 0, 13, 13, 1, 16],
+    [0, 0, 3, 13, 1, 13, 3, 0, 13, 13, 1, 16],
+    [0, 0, 3, 16, 1, 13, 3, 0, 0, 13, 1, 3, 3, 1, 0, 13, 16, 1, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 3, 0, 0, 13, 1, 3, 3, 1, 0, 13, 16, 1],
+    [0, 0, 3, 13, 1, 13, 3, 0, 0, 13, 1, 3, 3, 1, 0, 13, 16, 1],
+    [0, 0, 3, 16, 1, 13, 3, 0, 0, 13, 1, 3, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13, 3, 0, 0, 13, 1, 3],
+    [0, 0, 3, 13, 1, 13, 3, 0, 0, 13, 1, 3],
+    [0, 0, 3, 16, 1, 13, 15, 1, 3, 16, 16, 13],
+    [0, 0, 3, 16, 1, 13],
+    [0, 0, 3, 13, 1, 13],
+    [3, 0, 0, 13, 1, 16, 3, 1, 0, 13, 16, 1, 3, 1, 15, 13, 16, 16, 13, 0, 3, 16, 1, 13, 15, 1, 3, 16, 16, 13],
+    [3, 0, 0, 13, 1, 16, 3, 1, 0, 13, 16, 1, 3, 1, 15, 13, 16, 16, 13, 0, 3, 16, 1, 13],
+    [3, 0, 0, 13, 1, 16, 3, 1, 0, 13, 16, 1, 3, 1, 15, 13, 16, 16],
+    [3, 0, 0, 13, 1, 16, 3, 1, 15, 13, 16, 16, 13, 0, 3, 16, 1, 13, 15, 1, 3, 16, 16, 13],
+    [3, 0, 0, 13, 1, 16, 3, 1, 15, 13, 16, 16, 13, 0, 3, 16, 1, 13],
+    [3, 0, 0, 13, 1, 16, 3, 1, 15, 13, 16, 16],
+    [3, 0, 3, 13, 1, 16, 3, 1, 15, 13, 16, 16, 13, 0, 3, 16, 1, 13, 15, 1, 3, 16, 16, 13],
+    [3, 0, 3, 13, 1, 16, 3, 1, 15, 13, 16, 16, 13, 0, 3, 16, 1, 13],
+    [3, 0, 3, 13, 1, 16, 3, 1, 15, 13, 16, 16],
+    [3, 0, 0, 13, 1, 16, 3, 1, 0, 13, 16, 1, 13, 0, 3, 16, 1, 13, 15, 1, 3, 16, 16, 13],
+    [3, 0, 0, 13, 1, 16, 3, 1, 0, 13, 16, 1, 13, 0, 3, 16, 1, 13],
+    [3, 0, 0, 13, 1, 16, 3, 1, 0, 13, 16, 1],
+    [3, 0, 0, 13, 1, 16, 13, 0, 3, 16, 1, 13, 15, 1, 3, 16, 16, 13],
+    [3, 0, 0, 13, 1, 16, 13, 0, 3, 16, 1, 13],
+    [3, 0, 0, 13, 1, 16],
+    [3, 0, 3, 13, 1, 16, 13, 0, 3, 16, 1, 13, 15, 1, 3, 16, 16, 13],
+    [3, 0, 3, 13, 1, 16, 13, 0, 3, 16, 1, 13],
+    [3, 0, 3, 13, 1, 16],
+    [3, 0, 0, 13, 1, 13, 3, 1, 0, 13, 16, 1, 13, 0, 3, 16, 1, 13, 15, 1, 3, 16, 16, 13],
+    [3, 0, 0, 13, 1, 13, 3, 1, 0, 13, 16, 1, 13, 0, 3, 16, 1, 13],
+    [3, 0, 0, 13, 1, 13, 3, 1, 0, 13, 16, 1],
+    [3, 0, 0, 13, 1, 13, 13, 0, 3, 16, 1, 13, 15, 1, 3, 16, 16, 13],
+    [3, 0, 0, 13, 1, 13, 13, 0, 3, 16, 1, 13],
+    [3, 0, 0, 13, 1, 13],
+    [3, 0, 3, 16, 1, 13, 15, 1, 3, 16, 16, 13],
+    [3, 0, 3, 16, 1, 13],
+    [3, 0, 3, 13, 1, 13],
+    [0, 0, 0, 16, 4, 16],
+    [0, 0, 0, 16, 6, 16],
+    [0, 0, 0, 16, 10, 16],
+    [0, 0, 0, 16, 14, 16],
+    [0, 0, 0, 16, 15, 16],
+    [4, 0, 4, 12, 16, 12],
+    [0, 0, 0, 3, 16, 16],
+    [13, 0, 0, 16, 16, 16],
+    [0, 0, 13, 16, 16, 16],
+    [0, 0, 0, 16, 16, 3],
+    [0, 5, 14, 16, 13, 16],
+    [0, 5, 0, 16, 13, 2],
+    [14, 5, 0, 16, 13, 16],
+    [0, 5, 0, 2, 13, 16],
+    [5, 0, 4, 11, 6, 12],
+    [5, 4, 10, 11, 12, 16],
+    [5, 10, 4, 11, 16, 12],
+    [5, 4, 0, 11, 12, 6],
+    [4, 0, 5, 12, 6, 11],
+    [10, 4, 5, 16, 12, 11],
+    [4, 10, 5, 12, 16, 11],
+    [0, 4, 5, 6, 12, 11],
+    [1, 0, 1, 15, 1, 15],
+    [1, 0, 1, 15, 1, 15],
+    [5, 0, 6, 11, 1, 10],
+    [5, 6, 15, 11, 10, 16],
+    [5, 15, 6, 11, 16, 10],
+    [5, 6, 0, 11, 10, 1],
+    [6, 0, 5, 10, 1, 11],
+    [15, 6, 5, 16, 10, 11],
+    [6, 15, 5, 10, 16, 11],
+    [0, 6, 5, 1, 10, 11],
+    [5, 0, 6, 11, 2, 10],
+    [5, 6, 14, 11, 10, 16],
+    [5, 14, 6, 11, 16, 10],
+    [5, 6, 0, 11, 10, 2],
+    [6, 0, 5, 10, 2, 11],
+    [14, 6, 5, 16, 10, 11],
+    [6, 14, 5, 10, 16, 11],
+    [0, 6, 5, 2, 10, 11],
+    [1, 0, 1, 15, 16, 15],
+    [0, 6, 7, 16, 15, 9, 6, 0, 6, 10, 6, 10, 6, 6, 6, 10, 16, 7, 6, 6, 9, 10, 16, 10, 6, 15, 7, 10, 16, 9, 7, 6, 0, 9, 15, 6, 7, 6, 10, 9, 15, 16],
+    [0, 6, 7, 10, 15, 9, 6, 0, 6, 10, 6, 10, 6, 6, 6, 10, 16, 7, 6, 6, 9, 10, 16, 10, 6, 15, 7, 10, 16, 9, 7, 6, 0, 9, 15, 6, 7, 6, 10, 9, 15, 16],
+    [0, 6, 7, 16, 15, 9, 6, 0, 6, 10, 6, 10, 6, 6, 6, 10, 16, 7, 6, 6, 9, 10, 16, 10, 6, 15, 7, 10, 16, 9, 7, 6, 10, 9, 15, 16],
+    [0, 6, 7, 10, 15, 9, 6, 0, 6, 10, 6, 10, 6, 6, 6, 10, 16, 7, 6, 6, 9, 10, 16, 10, 6, 15, 7, 10, 16, 9, 7, 6, 10, 9, 15, 16],
+    [0, 6, 7, 16, 15, 9, 6, 0, 6, 10, 6, 10, 6, 6, 6, 10, 16, 7, 6, 6, 9, 10, 16, 10, 6, 15, 7, 10, 16, 9, 7, 6, 0, 9, 15, 6],
+    [0, 6, 7, 10, 15, 9, 6, 0, 6, 10, 6, 10, 6, 6, 6, 10, 16, 7, 6, 6, 9, 10, 16, 10, 6, 15, 7, 10, 16, 9, 7, 6, 0, 9, 15, 6],
+    [0, 6, 7, 16, 15, 9, 6, 0, 6, 10, 6, 10, 6, 6, 6, 10, 16, 7, 6, 6, 9, 10, 16, 10, 6, 15, 7, 10, 16, 9],
+    [0, 6, 7, 10, 15, 9, 6, 0, 6, 10, 6, 10, 6, 6, 6, 10, 16, 7, 6, 6, 9, 10, 16, 10, 6, 15, 7, 10, 16, 9],
+    [6, 0, 6, 10, 16, 10, 7, 6, 0, 9, 15, 6, 7, 6, 10, 9, 15, 16, 10, 6, 7, 16, 15, 9],
+    [6, 0, 6, 10, 16, 10, 7, 6, 0, 9, 15, 6, 7, 6, 10, 9, 15, 16],
+    [6, 0, 6, 10, 16, 10, 7, 6, 10, 9, 15, 16, 10, 6, 7, 16, 15, 9],
+    [6, 0, 6, 10, 16, 10, 7, 6, 10, 9, 15, 16],
+    [6, 0, 6, 10, 16, 10, 7, 6, 0, 9, 15, 6, 10, 6, 7, 16, 15, 9],
+    [6, 0, 6, 10, 16, 10, 7, 6, 0, 9, 15, 6],
+    [6, 0, 6, 10, 16, 10, 10, 6, 7, 16, 15, 9],
+    [6, 0, 6, 10, 16, 10],
+    [0, 0, 6, 16, 16, 10],
+    [6, 0, 0, 10, 16, 16],
+    [1, 0, 1, 15, 8, 15],
+    [3, 0, 1, 15, 8, 15],
+    [5, 0, 1, 15, 8, 15],
+    [7, 0, 1, 15, 8, 15],
+    [9, 0, 1, 15, 8, 15],
+    [11, 0, 1, 15, 8, 15],
+    [13, 0, 1, 15, 8, 15],
+    [0, 13, 0, 16, 16, 16],
+    [0, 0, 0, 16, 3, 16],
+    [0, 0, 7, 16, 16, 9, 7, 0, 0, 9, 16, 7, 7, 0, 9, 9, 16, 16],
+    [0, 0, 7, 9, 16, 9, 7, 0, 0, 9, 16, 7, 7, 0, 9, 9, 16, 16],
+    [0, 0, 7, 16, 16, 9, 7, 0, 9, 9, 16, 16],
+    [0, 0, 7, 9, 16, 9, 7, 0, 9, 9, 16, 16],
+    [0, 0, 7, 16, 16, 9, 7, 0, 0, 9, 16, 7],
+    [0, 0, 7, 9, 16, 9, 7, 0, 0, 9, 16, 7],
+    [0, 0, 7, 16, 16, 9],
+    [0, 0, 7, 9, 16, 9],
+    [7, 0, 0, 9, 16, 16, 9, 0, 7, 16, 16, 9],
+    [7, 0, 0, 9, 16, 16],
+    [7, 0, 7, 9, 16, 16, 9, 0, 7, 16, 16, 9],
+    [7, 0, 7, 9, 16, 16],
+    [7, 0, 0, 9, 16, 9, 9, 0, 7, 16, 16, 9],
+    [7, 0, 0, 9, 16, 9],
+    [7, 0, 7, 16, 16, 9],
+    [7, 0, 7, 9, 16, 9],
+    [0, 7, 7, 16, 10, 10],
+    [7, 0, 7, 10, 16, 10],
+    [7, 7, 0, 10, 10, 16],
+    [6, 0, 0, 10, 10, 10],
+    [6, 0, 6, 10, 10, 16],
+    [0, 0, 6, 10, 10, 10],
+    [6, 0, 6, 16, 10, 10],
+    [7, 0, 7, 9, 2, 9],
+    [7, 0, 7, 9, 4, 9],
+    [7, 0, 7, 9, 6, 9],
+    [7, 0, 7, 9, 8, 9],
+    [7, 0, 7, 9, 10, 9],
+    [7, 0, 7, 9, 12, 9],
+    [7, 0, 7, 9, 14, 9],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16, 1, 1, 0, 16, 16, 1, 1, 1, 15, 16, 16, 16, 1, 15, 1, 16, 16, 15, 15, 1, 1, 16, 15, 15],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16, 1, 1, 0, 16, 16, 1, 1, 1, 15, 16, 16, 16, 1, 15, 1, 16, 16, 15],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16, 1, 1, 15, 16, 16, 16, 1, 15, 0, 16, 16, 15, 15, 1, 0, 16, 15, 15],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16, 1, 1, 15, 16, 16, 16, 1, 15, 0, 16, 16, 15],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16, 1, 1, 0, 16, 16, 1, 1, 15, 1, 16, 16, 16, 15, 1, 1, 16, 15, 16],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16, 1, 1, 0, 16, 16, 1, 1, 15, 1, 16, 16, 16],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16, 1, 15, 0, 16, 16, 16, 15, 1, 0, 16, 15, 16],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16, 1, 15, 0, 16, 16, 16],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16, 1, 1, 0, 16, 16, 1, 1, 1, 15, 16, 16, 16, 15, 1, 1, 16, 16, 15],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16, 1, 1, 0, 16, 16, 1, 1, 1, 15, 16, 16, 16],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16, 1, 1, 15, 16, 16, 16, 15, 1, 0, 16, 16, 15],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16, 1, 1, 15, 16, 16, 16],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16, 1, 1, 0, 16, 16, 1, 15, 1, 1, 16, 16, 16],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16, 1, 1, 0, 16, 16, 1],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16, 15, 1, 0, 16, 16, 16],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 1, 16, 16],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 16, 16, 1, 0, 1, 15, 16, 16, 16, 0, 15, 1, 16, 16, 15, 15, 1, 1, 16, 15, 15],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 16, 16, 1, 0, 1, 15, 16, 16, 16, 0, 15, 1, 16, 16, 15],
+    [0, 0, 0, 16, 1, 16, 0, 1, 15, 16, 16, 16, 0, 15, 0, 16, 16, 15, 15, 1, 0, 16, 15, 15],
+    [0, 0, 0, 16, 1, 16, 0, 1, 15, 16, 16, 16, 0, 15, 0, 16, 16, 15],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 16, 16, 1, 0, 15, 1, 16, 16, 16, 15, 1, 1, 16, 15, 16],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 16, 16, 1, 0, 15, 1, 16, 16, 16],
+    [0, 0, 0, 16, 1, 16, 0, 15, 0, 16, 16, 16, 15, 1, 0, 16, 15, 16],
+    [0, 0, 0, 16, 1, 16, 0, 15, 0, 16, 16, 16],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 16, 16, 1, 0, 1, 15, 16, 16, 16, 15, 1, 1, 16, 16, 15],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 16, 16, 1, 0, 1, 15, 16, 16, 16],
+    [0, 0, 0, 16, 1, 16, 0, 1, 15, 16, 16, 16, 15, 1, 0, 16, 16, 15],
+    [0, 0, 0, 16, 1, 16, 0, 1, 15, 16, 16, 16],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 16, 16, 1, 15, 1, 1, 16, 16, 16],
+    [0, 0, 0, 16, 1, 16, 0, 1, 0, 16, 16, 1],
+    [0, 0, 0, 16, 1, 16, 15, 1, 0, 16, 16, 16],
+    [0, 2, 7, 2, 13, 9, 14, 2, 7, 16, 13, 9],
+    [7, 2, 0, 9, 13, 2, 7, 2, 14, 9, 13, 16],
+    [0, 5, 7, 2, 16, 9, 14, 5, 7, 16, 16, 9],
+    [7, 5, 0, 9, 16, 2, 7, 5, 14, 9, 16, 16],
+    [1, 0, 1, 15, 2, 15],
+    [0, 0, 0, 16, 5, 16],
+    [0, 0, 0, 16, 11, 16],
+    [1, 0, 1, 15, 2, 15, 7, 2, 7, 9, 14, 9],
+    [0, 0, 0, 2, 16, 4, 0, 0, 12, 2, 16, 16, 0, 3, 4, 16, 4, 12, 0, 4, 4, 2, 16, 12, 2, 0, 0, 4, 16, 2, 2, 0, 14, 4, 16, 16, 2, 3, 2, 16, 4, 4, 2, 3, 12, 16, 4, 14, 4, 3, 0, 16, 16, 2, 4, 3, 14, 16, 16, 16, 12, 0, 0, 16, 3, 2, 12, 0, 14, 16, 3, 16, 14, 0, 2, 16, 3, 4, 14, 0, 12, 16, 3, 14, 14, 4, 2, 16, 16, 14],
+    [0, 6, 0, 16, 12, 16],
+    [0, 0, 0, 16, 13, 16, 4, 13, 4, 12, 16, 12],
+    [0, 0, 0, 16, 13, 16],
+    [6, 7, 1, 10, 12, 5],
+    [5, 5, 1, 11, 12, 7],
+    [4, 3, 1, 12, 12, 9],
+    [6, 7, 11, 10, 12, 15],
+    [5, 5, 9, 11, 12, 15],
+    [4, 3, 7, 12, 12, 15],
+    [1, 7, 6, 5, 12, 10],
+    [1, 5, 5, 7, 12, 11],
+    [1, 3, 4, 9, 12, 12],
+    [11, 7, 6, 15, 12, 10],
+    [9, 5, 5, 15, 12, 11],
+    [7, 3, 4, 15, 12, 12],
+    [5, 0, 10, 11, 10, 16],
+    [5, 0, 0, 11, 10, 6],
+    [10, 0, 5, 16, 10, 11],
+    [0, 0, 5, 6, 10, 11],
+    [0, 1, 0, 16, 3, 16],
+    [4, 0, 4, 12, 16, 12, 12, 0, 5, 16, 14, 11],
+    [4, 0, 4, 12, 16, 12, 12, 0, 5, 16, 16, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 14, 4],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 14, 4, 12, 0, 5, 16, 14, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 14, 4, 12, 0, 5, 16, 16, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 16, 4],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 16, 4, 12, 0, 5, 16, 14, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 16, 4, 12, 0, 5, 16, 16, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 12, 11, 14, 16],
+    [4, 0, 4, 12, 16, 12, 5, 0, 12, 11, 14, 16, 12, 0, 5, 16, 14, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 12, 11, 14, 16, 12, 0, 5, 16, 16, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 14, 16],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 14, 16, 12, 0, 5, 16, 14, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 14, 16, 12, 0, 5, 16, 16, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 14, 16],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 14, 16, 12, 0, 5, 16, 14, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 14, 16, 12, 0, 5, 16, 16, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 12, 11, 16, 16],
+    [4, 0, 4, 12, 16, 12, 5, 0, 12, 11, 16, 16, 12, 0, 5, 16, 14, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 12, 11, 16, 16, 12, 0, 5, 16, 16, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 16, 16],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 16, 16, 12, 0, 5, 16, 14, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 16, 16, 12, 0, 5, 16, 16, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 16, 16],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 16, 16, 12, 0, 5, 16, 14, 11],
+    [4, 0, 4, 12, 16, 12, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 16, 16, 12, 0, 5, 16, 16, 11],
+    [5, 0, 5, 16, 14, 11],
+    [5, 0, 5, 16, 16, 11],
+    [5, 0, 0, 11, 14, 11],
+    [5, 0, 0, 11, 14, 11, 11, 0, 5, 16, 14, 11],
+    [5, 0, 0, 11, 14, 11, 5, 14, 5, 16, 16, 11, 11, 0, 5, 16, 14, 11],
+    [5, 0, 0, 11, 16, 11],
+    [5, 0, 0, 11, 16, 11, 11, 0, 5, 16, 14, 11],
+    [5, 0, 0, 11, 16, 11, 11, 0, 5, 16, 16, 11],
+    [5, 0, 5, 11, 14, 16],
+    [5, 0, 5, 11, 14, 16, 11, 0, 5, 16, 14, 11],
+    [5, 0, 5, 11, 14, 16, 5, 14, 5, 16, 16, 11, 11, 0, 5, 16, 14, 11],
+    [5, 0, 0, 11, 14, 16],
+    [5, 0, 0, 11, 14, 16, 11, 0, 5, 16, 14, 11],
+    [5, 0, 0, 11, 14, 16, 5, 14, 5, 16, 16, 11, 11, 0, 5, 16, 14, 11],
+    [5, 0, 0, 11, 14, 16, 5, 14, 0, 11, 16, 11],
+    [5, 0, 0, 11, 14, 16, 5, 14, 0, 11, 16, 11, 11, 0, 5, 16, 14, 11],
+    [5, 0, 0, 11, 14, 16, 5, 14, 0, 11, 16, 11, 11, 0, 5, 16, 16, 11],
+    [5, 0, 5, 11, 16, 16],
+    [5, 0, 5, 11, 16, 16, 11, 0, 5, 16, 14, 11],
+    [5, 0, 5, 11, 16, 16, 11, 0, 5, 16, 16, 11],
+    [5, 0, 0, 11, 14, 16, 5, 14, 5, 11, 16, 16],
+    [5, 0, 0, 11, 14, 16, 5, 14, 5, 11, 16, 16, 11, 0, 5, 16, 14, 11],
+    [5, 0, 0, 11, 14, 16, 5, 14, 5, 11, 16, 16, 11, 0, 5, 16, 16, 11],
+    [5, 0, 0, 11, 16, 16],
+    [5, 0, 0, 11, 16, 16, 11, 0, 5, 16, 14, 11],
+    [5, 0, 0, 11, 16, 16, 11, 0, 5, 16, 16, 11],
+    [0, 0, 5, 12, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 16, 16, 11],
+    [0, 0, 5, 12, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 0, 11, 14, 4],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 0, 11, 14, 4],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 16, 16, 11, 5, 0, 0, 11, 14, 4],
+    [0, 0, 5, 12, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 0, 11, 16, 4],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 0, 11, 16, 4],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 16, 16, 11, 5, 0, 0, 11, 16, 4],
+    [0, 0, 5, 12, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 16, 16, 11, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 12, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 16, 16, 11, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 12, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 16, 16, 11, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 12, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 16, 16, 11, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 12, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 16, 16, 11, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 12, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 12, 16, 11, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 16, 14, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 4, 14, 5, 16, 16, 11, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 11, 14, 11],
+    [0, 0, 5, 16, 14, 11],
+    [0, 0, 5, 16, 14, 11, 5, 14, 5, 16, 16, 11],
+    [0, 0, 5, 11, 14, 11, 5, 0, 0, 11, 14, 5],
+    [0, 0, 5, 16, 14, 11, 5, 0, 0, 11, 14, 5],
+    [0, 0, 5, 16, 14, 11, 5, 0, 0, 11, 14, 5, 5, 14, 5, 16, 16, 11],
+    [0, 0, 5, 11, 14, 11, 5, 0, 0, 11, 16, 5, 5, 14, 5, 11, 16, 11],
+    [0, 0, 5, 16, 14, 11, 5, 0, 0, 11, 16, 5, 5, 14, 5, 11, 16, 11],
+    [0, 0, 5, 16, 14, 11, 5, 0, 0, 11, 16, 5, 5, 14, 5, 16, 16, 11],
+    [0, 0, 5, 11, 14, 11, 5, 0, 11, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 5, 0, 11, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 5, 0, 11, 11, 14, 16, 5, 14, 5, 16, 16, 11],
+    [0, 0, 5, 11, 14, 11, 5, 0, 0, 11, 14, 5, 5, 0, 11, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 5, 0, 0, 11, 14, 5, 5, 0, 11, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 5, 0, 0, 11, 14, 5, 5, 0, 11, 11, 14, 16, 5, 14, 5, 16, 16, 11],
+    [0, 0, 5, 11, 14, 11, 5, 0, 0, 11, 16, 5, 5, 0, 11, 11, 14, 16, 5, 14, 5, 11, 16, 11],
+    [0, 0, 5, 16, 14, 11, 5, 0, 0, 11, 16, 5, 5, 0, 11, 11, 14, 16, 5, 14, 5, 11, 16, 11],
+    [0, 0, 5, 16, 14, 11, 5, 0, 0, 11, 16, 5, 5, 0, 11, 11, 14, 16, 5, 14, 5, 16, 16, 11],
+    [0, 0, 5, 11, 14, 11, 5, 0, 11, 11, 16, 16, 5, 14, 5, 11, 16, 11],
+    [0, 0, 5, 16, 14, 11, 5, 0, 11, 11, 16, 16, 5, 14, 5, 11, 16, 11],
+    [0, 0, 5, 16, 14, 11, 5, 0, 11, 11, 16, 16, 5, 14, 5, 16, 16, 11],
+    [0, 0, 5, 11, 14, 11, 5, 0, 0, 11, 14, 5, 5, 0, 11, 11, 16, 16, 5, 14, 5, 11, 16, 11],
+    [0, 0, 5, 16, 14, 11, 5, 0, 0, 11, 14, 5, 5, 0, 11, 11, 16, 16, 5, 14, 5, 11, 16, 11],
+    [0, 0, 5, 16, 14, 11, 5, 0, 0, 11, 14, 5, 5, 0, 11, 11, 16, 16, 5, 14, 5, 16, 16, 11],
+    [0, 0, 5, 11, 14, 11, 5, 0, 0, 11, 16, 5, 5, 0, 11, 11, 16, 16, 5, 14, 5, 11, 16, 11],
+    [0, 0, 5, 16, 14, 11, 5, 0, 0, 11, 16, 5, 5, 0, 11, 11, 16, 16, 5, 14, 5, 11, 16, 11],
+    [0, 0, 5, 16, 14, 11, 5, 0, 0, 11, 16, 5, 5, 0, 11, 11, 16, 16, 5, 14, 5, 16, 16, 11],
+    [0, 0, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12],
+    [0, 0, 5, 16, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12],
+    [0, 0, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 14, 4],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 14, 4],
+    [0, 0, 5, 16, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 14, 4],
+    [0, 0, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 16, 4],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 16, 4],
+    [0, 0, 5, 16, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 16, 4],
+    [0, 0, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 16, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 16, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 16, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 14, 16],
+    [0, 0, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 16, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 16, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 14, 4, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 12, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 16, 16, 11, 4, 0, 4, 12, 16, 5, 4, 0, 11, 12, 16, 12, 5, 0, 0, 11, 16, 4, 5, 0, 12, 11, 16, 16],
+    [0, 0, 5, 11, 16, 11],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 11, 16, 11],
+    [0, 0, 5, 16, 16, 11],
+    [0, 0, 5, 11, 16, 11, 5, 0, 0, 11, 14, 5],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 11, 16, 11, 5, 0, 0, 11, 14, 5],
+    [0, 0, 5, 16, 16, 11, 5, 0, 0, 11, 14, 5],
+    [0, 0, 5, 11, 16, 11, 5, 0, 0, 11, 16, 5],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 11, 16, 11, 5, 0, 0, 11, 16, 5],
+    [0, 0, 5, 16, 16, 11, 5, 0, 0, 11, 16, 5],
+    [0, 0, 5, 11, 16, 11, 5, 0, 11, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 11, 16, 11, 5, 0, 11, 11, 14, 16],
+    [0, 0, 5, 16, 16, 11, 5, 0, 11, 11, 14, 16],
+    [0, 0, 5, 11, 16, 11, 5, 0, 0, 11, 14, 5, 5, 0, 11, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 11, 16, 11, 5, 0, 0, 11, 14, 5, 5, 0, 11, 11, 14, 16],
+    [0, 0, 5, 16, 16, 11, 5, 0, 0, 11, 14, 5, 5, 0, 11, 11, 14, 16],
+    [0, 0, 5, 11, 16, 11, 5, 0, 0, 11, 16, 5, 5, 0, 11, 11, 14, 16],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 11, 16, 11, 5, 0, 0, 11, 16, 5, 5, 0, 11, 11, 14, 16],
+    [0, 0, 5, 16, 16, 11, 5, 0, 0, 11, 16, 5, 5, 0, 11, 11, 14, 16],
+    [0, 0, 5, 11, 16, 11, 5, 0, 11, 11, 16, 16],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 11, 16, 11, 5, 0, 11, 11, 16, 16],
+    [0, 0, 5, 16, 16, 11, 5, 0, 11, 11, 16, 16],
+    [0, 0, 5, 11, 16, 11, 5, 0, 0, 11, 14, 5, 5, 0, 11, 11, 16, 16],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 11, 16, 11, 5, 0, 0, 11, 14, 5, 5, 0, 11, 11, 16, 16],
+    [0, 0, 5, 16, 16, 11, 5, 0, 0, 11, 14, 5, 5, 0, 11, 11, 16, 16],
+    [0, 0, 5, 11, 16, 11, 5, 0, 0, 11, 16, 5, 5, 0, 11, 11, 16, 16],
+    [0, 0, 5, 16, 14, 11, 0, 14, 5, 11, 16, 11, 5, 0, 0, 11, 16, 5, 5, 0, 11, 11, 16, 16],
+    [0, 0, 5, 16, 16, 11, 5, 0, 0, 11, 16, 5, 5, 0, 11, 11, 16, 16],
+    [0, 0, 0, 16, 7, 16],
+    [0, 0, 0, 16, 9, 16],
+    [4, 4, 8, 12, 12, 16],
+    [4, 4, 0, 12, 12, 8],
+    [8, 4, 4, 16, 12, 12],
+    [0, 4, 4, 8, 12, 12],
+    [2, 0, 2, 14, 4, 14, 3, 10, 0, 13, 16, 16, 4, 4, 3, 12, 5, 13, 6, 5, 4, 10, 10, 12],
+    [0, 10, 3, 16, 16, 13, 2, 0, 2, 14, 4, 14, 3, 4, 4, 13, 5, 12, 4, 5, 6, 12, 10, 10],
+    [0, 10, 0, 16, 11, 16, 0, 11, 0, 2, 16, 16, 2, 11, 0, 16, 16, 2, 2, 11, 14, 16, 16, 16, 4, 4, 4, 12, 10, 12, 6, 0, 6, 10, 4, 10, 14, 11, 2, 16, 16, 14],
+    [0, 10, 0, 16, 11, 16, 0, 11, 0, 2, 16, 16, 2, 11, 0, 16, 16, 2, 2, 11, 14, 16, 16, 16, 4, 4, 4, 12, 10, 12, 6, 4, 0, 10, 8, 4, 14, 11, 2, 16, 16, 14],
+    [0, 10, 0, 16, 11, 16, 0, 11, 0, 2, 16, 16, 2, 11, 0, 16, 16, 2, 2, 11, 14, 16, 16, 16, 4, 4, 4, 12, 10, 12, 6, 4, 12, 10, 8, 16, 14, 11, 2, 16, 16, 14],
+    [0, 4, 6, 12, 8, 10, 0, 10, 0, 16, 11, 16, 0, 11, 0, 2, 16, 16, 2, 11, 0, 16, 16, 2, 2, 11, 14, 16, 16, 16, 4, 4, 4, 12, 10, 6, 4, 4, 10, 12, 10, 12, 4, 8, 6, 12, 10, 10, 14, 11, 2, 16, 16, 14],
+    [0, 10, 0, 16, 11, 16, 0, 11, 0, 2, 16, 16, 2, 11, 0, 16, 16, 2, 2, 11, 14, 16, 16, 16, 4, 4, 4, 12, 10, 12, 12, 4, 6, 16, 8, 10, 14, 11, 2, 16, 16, 14],
+    [0, 8, 0, 16, 16, 16],
+    [0, 0, 14, 16, 13, 16],
+    [0, 0, 0, 16, 13, 2],
+    [14, 0, 0, 16, 13, 16],
+    [0, 0, 0, 2, 13, 16],
+    [6, 6, 0, 10, 10, 16],
+    [0, 6, 6, 16, 10, 10],
+    [0, 3, 3, 16, 13, 13, 3, 0, 3, 13, 3, 13, 3, 3, 0, 13, 13, 3, 3, 3, 13, 13, 13, 16, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 16, 13, 13, 3, 3, 0, 13, 13, 3, 3, 3, 13, 13, 13, 16, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 13, 13, 13, 3, 0, 3, 13, 3, 13, 3, 3, 0, 13, 13, 3, 3, 3, 13, 13, 13, 16, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 13, 13, 13, 3, 3, 0, 13, 13, 3, 3, 3, 13, 13, 13, 16, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 16, 13, 13, 3, 0, 3, 13, 3, 13, 3, 3, 13, 13, 13, 16, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 16, 13, 13, 3, 3, 13, 13, 13, 16, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 13, 13, 13, 3, 0, 3, 13, 3, 13, 3, 3, 13, 13, 13, 16, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 13, 13, 13, 3, 3, 13, 13, 13, 16, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 16, 13, 13, 3, 0, 3, 13, 3, 13, 3, 3, 0, 13, 13, 3, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 16, 13, 13, 3, 3, 0, 13, 13, 3, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 13, 13, 13, 3, 0, 3, 13, 3, 13, 3, 3, 0, 13, 13, 3, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 13, 13, 13, 3, 3, 0, 13, 13, 3, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 16, 13, 13, 3, 0, 3, 13, 3, 13, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 16, 13, 13, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 13, 13, 13, 3, 0, 3, 13, 3, 13, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 13, 13, 13, 3, 13, 3, 13, 16, 13],
+    [0, 3, 3, 16, 13, 13, 3, 0, 3, 13, 3, 13, 3, 3, 0, 13, 13, 3, 3, 3, 13, 13, 13, 16],
+    [0, 3, 3, 16, 13, 13, 3, 3, 0, 13, 13, 3, 3, 3, 13, 13, 13, 16],
+    [0, 3, 3, 13, 13, 13, 3, 0, 3, 13, 3, 13, 3, 3, 0, 13, 13, 3, 3, 3, 13, 13, 13, 16],
+    [0, 3, 3, 13, 13, 13, 3, 3, 0, 13, 13, 3, 3, 3, 13, 13, 13, 16],
+    [0, 3, 3, 16, 13, 13, 3, 0, 3, 13, 3, 13, 3, 3, 13, 13, 13, 16],
+    [0, 3, 3, 16, 13, 13, 3, 3, 13, 13, 13, 16],
+    [0, 3, 3, 13, 13, 13, 3, 0, 3, 13, 3, 13, 3, 3, 13, 13, 13, 16],
+    [0, 3, 3, 13, 13, 13, 3, 3, 13, 13, 13, 16],
+    [0, 3, 3, 16, 13, 13, 3, 0, 3, 13, 3, 13, 3, 3, 0, 13, 13, 3],
+    [0, 3, 3, 16, 13, 13, 3, 3, 0, 13, 13, 3],
+    [0, 3, 3, 13, 13, 13, 3, 0, 3, 13, 3, 13, 3, 3, 0, 13, 13, 3],
+    [0, 3, 3, 13, 13, 13, 3, 3, 0, 13, 13, 3],
+    [0, 3, 3, 16, 13, 13, 3, 0, 3, 13, 3, 13],
+    [0, 3, 3, 16, 13, 13],
+    [0, 3, 3, 13, 13, 13, 3, 0, 3, 13, 3, 13],
+    [0, 3, 3, 13, 13, 13],
+    [3, 0, 3, 13, 16, 13, 3, 3, 0, 13, 13, 3, 3, 3, 13, 13, 13, 16, 13, 3, 3, 16, 13, 13],
+    [3, 3, 0, 13, 13, 16, 3, 13, 3, 13, 16, 13, 13, 3, 3, 16, 13, 13],
+    [3, 0, 3, 13, 16, 13, 3, 3, 0, 13, 13, 3, 3, 3, 13, 13, 13, 16],
+    [3, 3, 0, 13, 13, 16, 3, 13, 3, 13, 16, 13],
+    [3, 0, 3, 13, 16, 13, 3, 3, 13, 13, 13, 16, 13, 3, 3, 16, 13, 13],
+    [3, 3, 3, 13, 13, 16, 3, 13, 3, 13, 16, 13, 13, 3, 3, 16, 13, 13],
+    [3, 0, 3, 13, 16, 13, 3, 3, 13, 13, 13, 16],
+    [3, 3, 3, 13, 13, 16, 3, 13, 3, 13, 16, 13],
+    [3, 0, 3, 13, 16, 13, 3, 3, 0, 13, 13, 3, 13, 3, 3, 16, 13, 13],
+    [3, 3, 0, 13, 13, 13, 3, 13, 3, 13, 16, 13, 13, 3, 3, 16, 13, 13],
+    [3, 0, 3, 13, 16, 13, 3, 3, 0, 13, 13, 3],
+    [3, 3, 0, 13, 13, 13, 3, 13, 3, 13, 16, 13],
+    [3, 0, 3, 13, 16, 13, 13, 3, 3, 16, 13, 13],
+    [3, 3, 3, 16, 13, 13, 3, 13, 3, 13, 16, 13],
+    [3, 0, 3, 13, 16, 13],
+    [3, 3, 3, 13, 16, 13],
+    [3, 0, 3, 13, 13, 13, 3, 3, 0, 13, 13, 3, 3, 3, 13, 13, 13, 16, 13, 3, 3, 16, 13, 13],
+    [3, 3, 0, 13, 13, 16, 13, 3, 3, 16, 13, 13],
+    [3, 0, 3, 13, 13, 13, 3, 3, 0, 13, 13, 3, 3, 3, 13, 13, 13, 16],
+    [3, 3, 0, 13, 13, 16],
+    [3, 0, 3, 13, 13, 13, 3, 3, 13, 13, 13, 16, 13, 3, 3, 16, 13, 13],
+    [3, 3, 3, 13, 13, 16, 13, 3, 3, 16, 13, 13],
+    [3, 0, 3, 13, 13, 13, 3, 3, 13, 13, 13, 16],
+    [3, 3, 3, 13, 13, 16],
+    [3, 0, 3, 13, 13, 13, 3, 3, 0, 13, 13, 3, 13, 3, 3, 16, 13, 13],
+    [3, 3, 0, 13, 13, 13, 13, 3, 3, 16, 13, 13],
+    [3, 0, 3, 13, 13, 13, 3, 3, 0, 13, 13, 3],
+    [3, 3, 0, 13, 13, 13],
+    [3, 0, 3, 13, 13, 13, 13, 3, 3, 16, 13, 13],
+    [3, 3, 3, 16, 13, 13],
+    [3, 0, 3, 13, 13, 13],
+    [3, 3, 3, 13, 13, 13],
+    [5, 5, 5, 11, 11, 11],
+    [3, 0, 3, 12, 7, 12],
+    [1, 0, 1, 15, 7, 15],
+    [2, 0, 2, 14, 15, 14],
+    [2, 0, 2, 14, 4, 14],
+    [0, 4, 5, 16, 12, 16],
+    [0, 4, 0, 16, 12, 11],
+    [5, 4, 0, 16, 12, 16],
+    [0, 4, 0, 11, 12, 16],
+    [6, 0, 6, 10, 6, 10],
+    [3, 0, 3, 13, 6, 13],
+    [2, 0, 2, 14, 6, 14],
+    [2, 0, 2, 14, 7, 14],
+    [0, 0, 0, 8, 12, 8],
+    [1, 0, 1, 7, 16, 7],
+    [-1, 0, -1, 9, 16, 9],
+    [0, 0, 0, 16, 2, 16, 0, 2, 0, 2, 16, 2, 0, 2, 14, 2, 16, 16, 0, 14, 2, 16, 16, 14, 2, 14, 0, 16, 16, 2, 2, 14, 14, 16, 16, 16, 14, 2, 0, 16, 14, 2, 14, 2, 14, 16, 14, 16],
+    [0, 0, 0, 2, 16, 2, 0, 0, 14, 2, 16, 16, 0, 14, 2, 16, 16, 14, 2, 14, 0, 16, 16, 2, 2, 14, 14, 16, 16, 16, 14, 0, 0, 16, 14, 2, 14, 0, 14, 16, 14, 16],
+    [2, 0, 6, 4, 13, 10, 2, 7, 5, 14, 13, 6, 2, 7, 10, 14, 13, 11, 4, 4, 2, 12, 7, 14, 4, 7, 2, 12, 16, 5, 4, 7, 6, 14, 13, 10, 4, 7, 11, 12, 16, 14, 4, 13, 5, 12, 16, 11, 12, 0, 6, 14, 7, 10],
+    [2, 5, 3, 14, 11, 9, 2, 6, 9, 4, 10, 16, 4, 2, 0, 12, 5, 12, 4, 5, 0, 12, 14, 3, 4, 5, 9, 12, 14, 12, 4, 11, 3, 12, 14, 9, 12, 6, 9, 14, 10, 16],
+    [2, 3, 5, 14, 9, 11, 2, 9, 6, 14, 12, 10, 2, 12, 6, 4, 16, 10, 4, 0, 2, 12, 3, 14, 4, 3, 2, 12, 12, 5, 4, 3, 11, 12, 12, 14, 4, 9, 5, 12, 12, 6, 4, 9, 10, 12, 12, 11, 12, 12, 6, 14, 16, 10],
+    [2, 5, 7, 14, 11, 13, 2, 6, 0, 4, 10, 7, 4, 2, 4, 12, 5, 16, 4, 5, 4, 12, 14, 7, 4, 5, 13, 12, 14, 16, 4, 11, 7, 12, 14, 13, 12, 6, 0, 14, 10, 7],
+    [2, 4, 4, 14, 16, 12, 5, 7, 2, 11, 13, 4, 5, 7, 12, 11, 13, 14, 6, 0, 2, 10, 7, 4, 6, 0, 12, 10, 7, 14],
+    [0, 2, 4, 12, 14, 12, 3, 5, 2, 9, 11, 4, 3, 5, 12, 9, 11, 14, 9, 6, 2, 16, 10, 4, 9, 6, 12, 16, 10, 14],
+    [2, 0, 4, 14, 12, 12, 5, 3, 2, 11, 9, 4, 5, 3, 12, 11, 9, 14, 6, 9, 2, 10, 16, 4, 6, 9, 12, 10, 16, 14],
+    [0, 6, 2, 13, 10, 4, 0, 6, 12, 13, 10, 14, 4, 2, 4, 16, 14, 12, 7, 5, 2, 13, 6, 4, 7, 5, 12, 13, 6, 14, 7, 10, 2, 13, 11, 4, 7, 10, 12, 13, 11, 14],
+    [0, 0, 0, 16, 2, 16, 4, 2, 4, 12, 14, 12],
+    [0, 0, 4, 16, 16, 12],
+    [4, 4, 4, 12, 6, 12, 5, 6, 5, 11, 13, 11, 7, 13, 7, 9, 16, 9],
+    [4, 4, 4, 12, 6, 12, 5, 6, 5, 11, 13, 11, 7, 13, 0, 9, 15, 13],
+    [4, 4, 4, 12, 6, 12, 5, 6, 5, 11, 13, 11, 7, 13, 0, 9, 15, 16],
+    [4, 4, 4, 12, 6, 12, 5, 6, 5, 11, 13, 11, 7, 13, 3, 9, 15, 16],
+    [4, 0, 0, 12, 16, 16],
+    [0, 13, 7, 13, 15, 9, 4, 4, 4, 12, 6, 12, 5, 6, 5, 11, 13, 11],
+    [0, 13, 7, 16, 15, 9, 4, 4, 4, 12, 6, 12, 5, 6, 5, 11, 13, 11],
+    [3, 13, 7, 16, 15, 9, 4, 4, 4, 12, 6, 12, 5, 6, 5, 11, 13, 11],
+    [5, 1, 5, 11, 8, 11, 6, 8, 6, 10, 10, 10],
+    [5, 0, 5, 11, 7, 11, 6, 7, 6, 10, 9, 10],
+    [3, 0, 3, 13, 8, 13],
+    [4, 0, 4, 12, 9, 12],
+    [2, 0, 2, 14, 3, 14],
+    [4, 9, 4, 12, 16, 12],
+    [4, 0, 4, 12, 15, 12],
+    [0, 0, 0, 16, 2, 16, 0, 2, 0, 2, 16, 16, 2, 2, 0, 16, 16, 2, 2, 2, 14, 16, 16, 16, 14, 2, 2, 16, 16, 14],
+    [0, 0, 0, 16, 3, 16, 0, 3, 0, 2, 16, 16, 2, 3, 0, 16, 16, 2, 2, 3, 14, 16, 16, 16, 14, 3, 2, 16, 16, 14],
+    [0, 0, 0, 16, 5, 16, 0, 5, 0, 2, 16, 16, 2, 5, 0, 16, 16, 2, 2, 5, 14, 16, 16, 16, 14, 5, 2, 16, 16, 14],
+    [0, 0, 0, 16, 7, 16, 0, 7, 0, 2, 16, 16, 2, 7, 0, 16, 16, 2, 2, 7, 14, 16, 16, 16, 14, 7, 2, 16, 16, 14],
+    [0, 0, 0, 16, 9, 16, 0, 9, 0, 2, 16, 16, 2, 9, 0, 16, 16, 2, 2, 9, 14, 16, 16, 16, 14, 9, 2, 16, 16, 14],
+    [0, 0, 0, 16, 11, 16, 0, 11, 0, 2, 16, 16, 2, 11, 0, 16, 16, 2, 2, 11, 14, 16, 16, 16, 14, 11, 2, 16, 16, 14],
+    [0, 0, 0, 16, 13, 16, 0, 13, 0, 2, 16, 16, 2, 13, 0, 16, 16, 2, 2, 13, 14, 16, 16, 16, 14, 13, 2, 16, 16, 14],
+    [0, 0, 0, 16, 15, 16, 0, 15, 0, 2, 16, 16, 2, 15, 0, 16, 16, 2, 2, 15, 14, 16, 16, 16, 14, 15, 2, 16, 16, 14],
+    [5, 0, 6, 11, 6, 9],
+    [5, 0, 6, 10, 6, 11],
+    [5, 0, 5, 11, 6, 10],
+    [1, 0, 1, 15, 8, 15, 7, 8, 7, 9, 14, 9],
+    [3, 3, 9, 13, 13, 16],
+    [0, 3, 3, 7, 13, 13],
+    [3, 3, 0, 13, 13, 7],
+    [9, 3, 3, 16, 13, 13],
+    [3, 0, 3, 13, 7, 13],
+    [3, 9, 3, 13, 16, 13],
+    [3, 3, 11, 13, 13, 16],
+    [0, 3, 3, 5, 13, 13],
+    [3, 3, 0, 13, 13, 5],
+    [11, 3, 3, 16, 13, 13],
+    [3, 0, 3, 13, 5, 13],
+    [3, 11, 3, 13, 16, 13],
+    [3, 3, 12, 13, 13, 16],
+    [0, 3, 3, 4, 13, 13],
+    [3, 3, 0, 13, 13, 4],
+    [12, 3, 3, 16, 13, 13],
+    [3, 0, 3, 13, 4, 13],
+    [3, 12, 3, 13, 16, 13],
+    [4, 4, 13, 12, 12, 16],
+    [0, 4, 4, 3, 12, 12],
+    [4, 4, 0, 12, 12, 3],
+    [13, 4, 4, 16, 12, 12],
+    [4, 0, 4, 12, 3, 12],
+    [4, 13, 4, 12, 16, 12],
+    [2, 13, 2, 14, 16, 14],
+    [0, 8, 0, 16, 16, 16, 6, 0, 6, 10, 8, 10],
+    [0, 11, 0, 16, 15, 16, 5, 0, 9, 11, 11, 15],
+    [0, 11, 0, 16, 15, 16, 5, 0, 1, 11, 11, 7],
+    [0, 11, 0, 16, 15, 16, 9, 0, 5, 15, 11, 11],
+    [0, 11, 0, 16, 15, 16, 1, 0, 5, 7, 11, 11],
+    [0, 11, 0, 16, 13, 16, 5, 0, 9, 11, 11, 15],
+    [0, 11, 0, 16, 13, 16, 5, 0, 1, 11, 11, 7],
+    [0, 11, 0, 16, 13, 16, 9, 0, 5, 15, 11, 11],
+    [0, 11, 0, 16, 13, 16, 1, 0, 5, 7, 11, 11],
+    [5, 0, 9, 11, 13, 15],
+    [5, 0, 1, 11, 13, 7],
+    [9, 0, 5, 15, 13, 11],
+    [1, 0, 5, 7, 13, 11],
+    [5, 0, 9, 11, 16, 15],
+    [5, 0, 1, 11, 16, 7],
+    [9, 0, 5, 15, 16, 11],
+    [1, 0, 5, 7, 16, 11]
+  ]
+}
