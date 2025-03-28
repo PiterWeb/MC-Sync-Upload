@@ -6,8 +6,8 @@ type Users struct {
 
 type User struct {
 	Name        string
-	Uuid        string
-	OfflineUuid string
+	Uuid        string `toml:omitempty`
+	OfflineUuid string `toml:omitempty`
 }
 
 var users Users
